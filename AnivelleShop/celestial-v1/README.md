@@ -37,11 +37,11 @@ The creator-only class additionally reveals the existing **DO NOT BUY / Not for 
 
 ## Enhanced single-file edition
 
-Use `single-file/anivelle-imvu-tabs.txt` for the complete ten-panel description in one file. Rebuild it with `python tools/build_anivelle_tabs.py`. Its native radio/label controls switch panels without JavaScript or product-page URLs.
+Use `single-file/anivelle-imvu-tabs.txt` for the complete ten-panel description in one file. Rebuild it with `python tools/build_anivelle_tabs.py` (which calls `build_anivelle_hash.py`). Ordinary hash links with `target="_self"` replace the radio/label technique that failed in the supplied saved-page screenshots. The links stay within the description frame; CSS `:target` selects the panel and active navbar box. No JavaScript or product-page URLs are used.
 
-This edition adds illustrated gallery captions, richer collection cards, glowing navigation, animated star dividers, and a Copyright & DMCA Warning. Celestial Couture has Clothing and Accessories panel controls. The tagline remains “Your world. Your style.” with refreshed styling. The broken Discover the Look control is removed.
+This edition has ten rounded navbar boxes, uniform editorial gallery cards, a solid framed Copyright & DMCA panel, hover effects, and glowing star dividers. Essential visual styles are inline, and the smaller interaction stylesheet is placed first. Celestial Couture has Clothing and Accessories section links. The tagline remains “Your world. Your style.” The broken Discover the Look control is removed.
 
-All ten tabs and both couture controls were verified in a browser preview. IMVU must preserve radio inputs, label attributes, and the `:checked` CSS selectors on save; its live save filter remains unverified. The older simple-link edition below is retained separately.
+All ten section links, active states and both couture controls were verified in a browser preview, with desktop and 390-pixel layouts checked. IMVU must preserve fragment links, IDs, and `:target` sibling selectors on save; this revised technique has not been verified through its live save filter. If the whole stylesheet is removed, all sections remain visible. The older catalogue-link edition below is retained separately.
 
 ## Navigation destinations
 
