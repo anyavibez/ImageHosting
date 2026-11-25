@@ -1,0 +1,46 @@
+{
+  "source_sha256": "d7751670b8443254c1b3b8b82832ef7a735190cf5cd5ea3299bc327d2163c52f",
+  "only_difference": "initially checked radio",
+  "pages": {
+    "home": {
+      "checked": "anv-page-home",
+      "sha256": "ec0248b8aa49845d9d93f15e79e3d48d7aae6dfdcb37a9f5ce948e04b14e7bf6"
+    },
+    "shop": {
+      "checked": "anv-page-shop",
+      "sha256": "c98ee3e21b713856bbe34f1cd871c37f97fc2309935b9db9b64a08e3410f26bd"
+    },
+    "rooms": {
+      "checked": "anv-page-rooms",
+      "sha256": "86647ad8b24f29d2a7b5d6f80c882203e98d2feb08c39023a1f51c56e46004d2"
+    },
+    "clothing": {
+      "checked": "anv-page-clothing",
+      "sha256": "1a3649137cce114caf280ecda6a804e0284ea2b321a01be89d91b49106058ac5"
+    },
+    "accessories": {
+      "checked": "anv-page-accessories",
+      "sha256": "f3bb0aa2c410e37e507725f275a8f31ba4aad4732cfb7b28beeb9ab0203e9a06"
+    },
+    "avatar-poses": {
+      "checked": "anv-page-avatar-poses",
+      "sha256": "51f44fae4a2fe7f167342be291e297219ce8768ccdb8589587e52f6fd10ced55"
+    },
+    "body": {
+      "checked": "anv-page-body",
+      "sha256": "6641c77ec03839254b7cb7ada0590e9d4579cb5bd7ce83b242c6ab4ed6a2e561"
+    },
+    "pets": {
+      "checked": "anv-page-pets",
+      "sha256": "5e1ab7da3650397203bdb7a2469ae1b1a74d279496d24826af7de06f92858613"
+    },
+    "cutouts": {
+      "checked": "anv-page-cutouts",
+      "sha256": "f0a5ee3de51cd942c86e597e3f637db487927fa65852f26f736b094e0fa5d1ac"
+    },
+    "creator-only": {
+      "checked": "anv-page-creator-only",
+      "sha256": "70774b38f045247d0eb228d05a53984f8a249fa9ded2d0080031aac433e7065c"
+    }
+  }
+}

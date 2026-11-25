@@ -1,5 +1,13 @@
 # AnivelleShop — one common full-page theme
 
+## User-supplied default: ten active-tab editions
+
+The current requested descriptions are in `imvu-pages/`: ten complete HTML/TXT pairs built from the exact pasted default in `source/default-pasted.html`. Each filename selects its matching radio/tab on first load. All ten files differ only in which radio is initially checked; shop means Furniture and avatar-poses means Poses. Their contents were also copied to the user's requested local AnivelleShop folder.
+
+`source/interaction-effects.css` adds a hosted star cursor, six CSS sparkles over hovered navbar/card/gallery components, glow, lift, and press feedback. It does not track the pointer position or add JavaScript. Touch devices suppress hover particles, and reduced-motion disables animation. CSS image cursors are static; see [MDN cursor documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor).
+
+Rebuild with `python tools/build_anivelle_variants.py`. `imvu-pages/previews/` contains browser wrappers; paste the matching TXT file into IMVU. Browser checks verified every initial checked tab, all ten label-driven panel changes, and the applied particle animation and cursor rule. Live IMVU filtering is not reproduced. The earlier single-file and catalogue-link editions remain separately available below.
+
 ## Single-file page switching candidate
 
 `single-file/anivelle-imvu-tabs.html` (and its identical TXT version) includes all ten sections in one HTML description. Its category labels toggle radio controls; CSS `:checked` selectors show the matching section and active highlight without navigation or JavaScript. `single-file/preview.html` is the browser preview. All ten tabs were clicked and verified to show exactly one matching section while the URL stayed unchanged.

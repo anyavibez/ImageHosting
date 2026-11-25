@@ -1,0 +1,30 @@
+/* Cosmetic effects only: the supplied radio/label navigation is unchanged. */
+.anv-celestial{cursor:url('https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-cursor.png') 15 15,auto}
+.anv-celestial label,.anv-celestial a{cursor:url('https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-cursor-link.png') 15 13,pointer!important}
+.anv-celestial .anv-tab-navigation label{position:relative;isolation:isolate;overflow:visible;transition:transform .28s,box-shadow .28s,border-color .28s}
+.anv-celestial .anv-tab-navigation label:hover{transform:translateY(-3px);border-color:#ecc4df;box-shadow:inset 0 0 0 2px #fff2,0 0 22px #d4a1c771}
+.anv-celestial .anv-tab-navigation label:active{transform:translateY(1px) scale(.97)}
+.anv-celestial .anv-collection,.anv-celestial .anv-spotlight,.anv-celestial .anv-art-frame{position:relative;transition:transform .4s,box-shadow .4s,border-color .4s}
+.anv-celestial .anv-collection:hover{transform:translateY(-6px);box-shadow:0 0 0 4px #fff5fb,0 0 0 5px #d5a7c6,0 14px 30px #a168a14a}
+.anv-celestial .anv-art-frame:hover{transform:translateY(-5px);box-shadow:inset 0 0 0 3px #fff,0 14px 28px #ae7caa55}
+.anv-celestial .anv-hover-sparks{display:block;position:absolute;inset:0;pointer-events:none;z-index:5;border-radius:inherit;overflow:hidden}
+.anv-celestial .anv-hover-sparks>i{position:absolute;display:block;opacity:0;pointer-events:none;color:#fff0fa;font:normal 14px/1 Georgia,serif;text-shadow:0 0 5px #dc9cca,0 0 12px #f3bfe2;transform:scale(.1)}
+.anv-celestial .anv-hover-sparks>i:nth-child(1){left:9%;top:55%}
+.anv-celestial .anv-hover-sparks>i:nth-child(2){left:25%;top:27%}
+.anv-celestial .anv-hover-sparks>i:nth-child(3){left:49%;top:73%}
+.anv-celestial .anv-hover-sparks>i:nth-child(4){left:70%;top:40%}
+.anv-celestial .anv-hover-sparks>i:nth-child(5){left:88%;top:68%}
+.anv-celestial .anv-hover-sparks>i:nth-child(6){left:58%;top:25%}
+.anv-celestial .anv-tab-navigation label:hover>.anv-hover-sparks>i,
+.anv-celestial .anv-collection:hover>.anv-hover-sparks>i,
+.anv-celestial .anv-spotlight:hover>.anv-hover-sparks>i,
+.anv-celestial .anv-art-frame:hover>.anv-hover-sparks>i{animation:anv-hover-particle 1.7s ease-out infinite}
+.anv-celestial .anv-hover-sparks>i:nth-child(2){animation-delay:.18s!important}
+.anv-celestial .anv-hover-sparks>i:nth-child(3){animation-delay:.46s!important}
+.anv-celestial .anv-hover-sparks>i:nth-child(4){animation-delay:.72s!important}
+.anv-celestial .anv-hover-sparks>i:nth-child(5){animation-delay:1.03s!important}
+.anv-celestial .anv-hover-sparks>i:nth-child(6){animation-delay:1.32s!important}
+.anv-celestial .anv-tab-navigation label:focus-within{outline:2px solid #e9c0db;outline-offset:3px}
+@keyframes anv-hover-particle{0%{opacity:0;transform:translate(0,8px) scale(.1) rotate(-25deg)}20%{opacity:1;transform:translate(3px,-1px) scale(1) rotate(0deg)}65%{opacity:.65}100%{opacity:0;transform:translate(10px,-30px) scale(.15) rotate(80deg)}}
+@media(hover:none){.anv-celestial .anv-hover-sparks{display:none}.anv-celestial .anv-tab-navigation label:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.anv-celestial *,.anv-celestial *:before,.anv-celestial *:after{animation:none!important;transition:none!important}.anv-celestial .anv-hover-sparks{display:none}}
