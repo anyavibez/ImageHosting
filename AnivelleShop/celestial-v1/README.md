@@ -35,6 +35,14 @@ Each matching HTML file contains the same complete code as its TXT version. All 
 
 The creator-only class additionally reveals the existing **DO NOT BUY / Not for sale** notice. The personal ribbon restriction is retained.
 
+## Enhanced single-file edition
+
+Use `single-file/anivelle-imvu-tabs.txt` for the complete ten-panel description in one file. Rebuild it with `python tools/build_anivelle_tabs.py`. Its native radio/label controls switch panels without JavaScript or product-page URLs.
+
+This edition adds illustrated gallery captions, richer collection cards, glowing navigation, animated star dividers, and a Copyright & DMCA Warning. Celestial Couture has Clothing and Accessories panel controls. The tagline remains “Your world. Your style.” with refreshed styling. The broken Discover the Look control is removed.
+
+All ten tabs and both couture controls were verified in a browser preview. IMVU must preserve radio inputs, label attributes, and the `:checked` CSS selectors on save; its live save filter remains unverified. The older simple-link edition below is retained separately.
+
 ## Navigation destinations
 
 - **Downloadable website:** open index.html. All 10 section links open the corresponding full themed page, which carries its own active state. The three collection illustrations also open their matching category page.

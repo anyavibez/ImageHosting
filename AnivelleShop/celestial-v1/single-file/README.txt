@@ -5,3 +5,6 @@ Paste all of anivelle-imvu-tabs.txt into one IMVU description. Clicking a catego
 No JavaScript, no form submission, no product-page URLs are used for the tabs. Images load from GitHub.
 
 IMPORTANT: This is a CSS-only tabs candidate. It requires IMVU to retain INPUT type=radio, LABEL/for attributes, and :checked sibling selectors when saving. Browser operation is verified separately; the live IMVU filter is not verified. If these controls are removed, this technique cannot work there. The previous simple-link edition is preserved.
+
+ENHANCED EDITION
+Gallery captions, premium cards, glowing navigation, animated star dividers, and Copyright & DMCA Warning are included. The Couture buttons select Clothing and Accessories in this same file. Your world. Your style. is retained with refreshed styling.
