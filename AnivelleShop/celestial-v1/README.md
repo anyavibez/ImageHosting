@@ -35,14 +35,6 @@ Each matching HTML file contains the same complete code as its TXT version. All 
 
 The creator-only class additionally reveals the existing **DO NOT BUY / Not for sale** notice. The personal ribbon restriction is retained.
 
-## Single-file section visibility fix
-
-Use `single-file/anivelle-imvu-tabs.txt`, replacing the entire old description. Rebuild with `python tools/build_anivelle_tabs.py` (calls `build_anivelle_hash.py`). This edition contains all ten sections in one continuous page. Every section has inline `display:block`; navbar links jump to the actual section container. Each section has a Back to sections link. It no longer provides exclusive page switching.
-
-The previous CSS candidate hid nine sections and depended on `:target` sibling selectors to reveal them. That is unsafe when a saved page loses switching selectors or targets. This version never hides content and does not require radio controls, `:checked`, or `:target` for visibility or navigation. `:target` is used only for a cosmetic outline. Essential card, navbar and copyright styles remain inline.
-
-Browser checks reached all ten sections (each visible and positioned 18 pixels below the viewport top), and the return link reached the navbar. The saved IMVU filter is still unverified; if it removes fragment links or IDs, navigation can be affected, but this version's sections remain visible. Completely replace the old code so its hiding rules cannot remain.
-
 ## Navigation destinations
 
 - **Downloadable website:** open index.html. All 10 section links open the corresponding full themed page, which carries its own active state. The three collection illustrations also open their matching category page.
