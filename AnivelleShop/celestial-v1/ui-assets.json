@@ -1,0 +1,19 @@
+{
+  "kind": "code-drawn UI cursors",
+  "assets": [
+    {
+      "file": "assets/celestial-cursor.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-cursor.png",
+      "sha256": "f3af1221480d3cd7547a63815f0a96c30ed32e10650b6eba599083ddc495b775",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "file": "assets/celestial-cursor-link.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-cursor-link.png",
+      "sha256": "b0facdd8f976e571a2a4a3ba4e11fd154df27665f5d1ebfa6d7df9f88b9e0077",
+      "width": 32,
+      "height": 32
+    }
+  ]
+}

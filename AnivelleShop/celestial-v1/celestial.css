@@ -138,3 +138,33 @@
 .anv-celestial.active-home .anv-link-home .anv-current-label,.anv-celestial.active-shop .anv-link-shop .anv-current-label,.anv-celestial.active-rooms .anv-link-rooms .anv-current-label,.anv-celestial.active-clothing .anv-link-clothing .anv-current-label,.anv-celestial.active-accessories .anv-link-accessories .anv-current-label,.anv-celestial.active-avatar-poses .anv-link-avatar-poses .anv-current-label,.anv-celestial.active-body .anv-link-body .anv-current-label,.anv-celestial.active-pets .anv-link-pets .anv-current-label,.anv-celestial.active-cutouts .anv-link-cutouts .anv-current-label,.anv-celestial.active-creator-only .anv-link-creator-only .anv-current-label{display:inline}
 .anv-celestial.active-home .anv-top-home,.anv-celestial.active-shop .anv-top-collections,.anv-celestial.active-rooms .anv-top-collections,.anv-celestial.active-clothing .anv-top-collections,.anv-celestial.active-accessories .anv-top-collections,.anv-celestial.active-avatar-poses .anv-top-collections,.anv-celestial.active-body .anv-top-collections,.anv-celestial.active-pets .anv-top-collections,.anv-celestial.active-cutouts .anv-top-collections,.anv-celestial.active-creator-only .anv-top-collections{color:#ffe0ed;border-bottom:1px solid #e5b7cb;text-shadow:0 0 10px #efc1d9}
 @media(max-width:600px){.anv-celestial .anv-section-nav{padding:10px 2%;gap:3px}.anv-celestial .anv-section-nav a{padding:7px 9px;font-size:13px}}
+
+/* Celestial motion edition: scoped hover effects and hosted PNG cursors. */
+.anv-celestial{cursor:url('https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-cursor.png') 2 1,auto}
+.anv-celestial a,.anv-celestial .anv-link-box>a{cursor:url('https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-cursor-link.png') 15 13,pointer;transition:transform .25s,box-shadow .25s,background .25s,filter .25s}
+.anv-celestial .anv-hero-art{animation:anv-art-breathe 16s ease-in-out infinite alternate}
+.anv-celestial .anv-collection{transition:transform .4s,box-shadow .4s,filter .4s}
+.anv-celestial .anv-collection:hover{transform:perspective(900px) translateY(-6px) rotateX(2deg);box-shadow:0 0 0 4px #fff7fc,0 10px 32px #ac78aa66;filter:brightness(1.07)}
+.anv-celestial .anv-collection-label{padding-bottom:58px}
+.anv-celestial .anv-button{transition:transform .3s,box-shadow .3s}
+.anv-celestial .anv-button:hover{transform:translateY(-3px);box-shadow:0 0 24px #f4c0df88}
+.anv-celestial .anv-link-box>a{isolation:isolate;overflow:hidden}
+.anv-celestial .anv-link-box>a:before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 25%,#fff7 50%,transparent 75%);transform:translateX(-140%);z-index:-1}
+.anv-celestial .anv-link-box>a:hover:before{animation:anv-sheen .7s ease}
+.anv-celestial .anv-link-box>a:focus{box-shadow:0 0 0 3px #fff3f9,0 0 0 5px #a477a0}
+.anv-celestial .anv-topnav{flex-wrap:wrap;justify-content:center}
+.anv-celestial .anv-topnav .anv-bag{display:none}
+.anv-celestial .anv-section-nav .anv-link-box{display:flex;align-items:center;justify-content:center;gap:2px}
+.anv-celestial .anv-gallery-copy{text-align:center;color:#896784;font:italic 17px/1.6 Georgia,serif;margin:-7px 0 26px}
+.anv-celestial .anv-gallery{display:flex;align-items:center;justify-content:center;gap:15px;min-height:210px;padding:13px 9px 24px}
+.anv-celestial .anv-art-frame{width:18%;padding:5px;border:1px solid #d6abc9;background:#fff4fb;border-radius:44% 44% 12px 12px;box-shadow:0 8px 16px #7c53832b;overflow:hidden;animation:anv-art-float 7s ease-in-out infinite;transition:box-shadow .4s,filter .4s}
+.anv-celestial .anv-art-frame img{width:100%;height:auto;border-radius:inherit}
+.anv-celestial .anv-art-frame:nth-child(2){animation-delay:-1.4s;margin-top:30px}
+.anv-celestial .anv-art-frame:nth-child(3){animation-delay:-2.8s;width:21%;margin-top:-10px}
+.anv-celestial .anv-art-frame:nth-child(4){animation-delay:-4.2s;margin-top:30px}
+.anv-celestial .anv-art-frame:nth-child(5){animation-delay:-5.6s}
+.anv-celestial .anv-art-frame:hover{animation-play-state:paused;box-shadow:0 12px 30px #b87ab76b;filter:brightness(1.1)}
+@keyframes anv-art-breathe{from{transform:scale(1)}to{transform:scale(1.035)}}
+@keyframes anv-art-float{0%,100%{transform:translateY(3px) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+@media(max-width:600px){.anv-celestial .anv-gallery{flex-wrap:wrap;gap:15px}.anv-celestial .anv-art-frame,.anv-celestial .anv-art-frame:nth-child(3){width:42%;margin:0}.anv-celestial .anv-art-frame:nth-child(2),.anv-celestial .anv-art-frame:nth-child(4){margin-top:15px}.anv-celestial .anv-gallery-copy{font-size:15px}.anv-celestial .anv-section-nav .anv-link-box{flex-wrap:wrap}.anv-celestial .anv-topnav>.anv-link-box>a{margin-left:4px}}
+@media(prefers-reduced-motion:reduce){.anv-celestial *,.anv-celestial *:before,.anv-celestial *:after{animation:none!important;transition:none!important}}

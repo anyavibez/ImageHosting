@@ -133,6 +133,10 @@ def document(body, title, home=False):
 
 SECTIONS = [('home','Home',''),*[(s,l,c) for s,l,_,_,c in CATEGORIES],('creator-only','Creator Note','')]
 
+def moodboard(asset):
+    pictures=[('arrival-lunar-dress','Lavender couture dress'),('arrival-frill-dress','Pearl frill details'),('arrival-cape-set','Celestial silk cape'),('arrival-rose-braids','Rose ribbon hairstyle'),('arrival-orbit-bow','Golden star bow')]
+    return '<div class="anv-section anv-moodboard" id="anv-gallery">'+heading('The Celestial Edit')+'<p class="anv-gallery-copy">A little lace. A little starlight. A world of your own.</p><div class="anv-gallery">'+''.join(f'<div class="anv-art-frame"><img src="{asset(image)}" width="1024" height="1024" alt="{label}" loading="lazy" decoding="async"></div>' for image,label in pictures)+'</div></div>'
+
 def section_url(section, embed=False, root_page=False):
     if embed:
         return CATALOG if section in ('home','creator-only') else cat_url(next(c for s,_,c in SECTIONS if s==section))
@@ -143,6 +147,9 @@ def common_body(active='home', embed=False, root_page=False):
     """One full layout. Only the root active-* class changes between IMVU copies."""
     assert active in {s for s,_,_ in SECTIONS}, f'Unknown active section: {active}'
     html=render('shop',DATA['anivelle-shop.html'],embed=False,home=True)
+    html=html.replace(arrivals(lambda name:'assets/'+name+'.webp'),moodboard(lambda name:'assets/'+name+'.webp'))
+    html=html.replace('<a href="#anv-arrivals">New Arrivals</a>','')
+    html=html.replace('<a class="anv-button" href="#anv-collections">Explore Collection</a>','')
     html=html.replace('class="anv-celestial"','class="anv-celestial active-'+active+'"',1)
     # Replace the old, lower category directory with a persistent header navbar.
     html=re.sub(r'<nav class="anv-categories".*?</nav>','',html,flags=re.S)
@@ -198,7 +205,13 @@ def imvu_link_fallback(html):
         label=' '.join(label.split()).replace('(current section)','').strip()
         if not label: label=attrs.get('aria-label','Open IMVU catalogue')
         classes='anv-link-box '+attrs.get('class','anv-inline-link')
-        return f'<div class="{esc(classes)}">{body}<a href="{esc(href)}" target="_top">{esc(label)}</a></div>'
+        if 'anv-brand' in classes:
+            return f'<div class="{esc(classes)}">{body}</div>'
+        if any(c in classes.split() for c in ('anv-search','anv-bag')):
+            action='Search' if 'anv-search' in classes.split() else 'Shop'
+            return f'<div class="{esc(classes)}">{body}<a href="{esc(href)}" target="_top">{action}</a></div>'
+        action='View Collection' if 'anv-collection' in classes.split() else 'Open Shop' if 'anv-button' in classes.split() else 'Open'
+        return f'<div class="{esc(classes)}">{body}<a href="{esc(href)}" target="_top">{action}</a></div>'
     html=re.sub(r'<a\b([^>]*)>(.*?)</a>',replace,html,flags=re.S)
     html=re.sub(r'(<h2>)([^<]+)(</h2>)',r'\1<span class="anv-heading-star" aria-hidden="true">&#10022;</span>\2<span class="anv-heading-star" aria-hidden="true">&#10022;</span>\3',html)
     html=html.replace('<div class="anv-hero-divider" aria-hidden="true"></div>','<div class="anv-hero-divider" aria-hidden="true"><span>&#10022;</span></div>')
@@ -212,7 +225,16 @@ def imvu_symbol_css(css):
 
 IMVU_LINK_CSS='''
 .anv-celestial .anv-link-box{position:relative}
-.anv-celestial .anv-link-box>a{display:block;position:absolute;inset:0;width:100%;height:100%;z-index:8;overflow:hidden;text-indent:-9999px;color:transparent;background:transparent;font-size:16px}
+.anv-celestial .anv-link-box>a{display:inline-block;position:relative;z-index:4;min-height:30px;padding:4px 12px;margin:5px 0 0;border:1px solid #d4a3bf;border-radius:18px;color:#fff2fa;background:#754d78;font:14px/1.5 Georgia,serif;text-indent:0;overflow:visible;cursor:pointer;text-decoration:none}
+.anv-celestial .anv-link-box>a:hover{background:#ad7fa3;box-shadow:0 0 16px #edb9dd;transform:translateY(-2px)}
+.anv-celestial .anv-link-box>a:active{transform:translateY(1px)}
+.anv-celestial .anv-section-nav>.anv-link-box>a{padding:2px 8px;font-size:12px;min-height:25px;margin:0 0 0 7px}
+.anv-celestial .anv-topnav>.anv-link-box>a{padding:2px 9px;font-size:12px;margin-left:7px}
+.anv-celestial .anv-link-box.anv-collection>a{position:absolute;left:18px;bottom:12px;margin:0;font-size:13px;background:#8c668bbf}
+.anv-celestial .anv-link-box .anv-round-star{display:none}
+.anv-celestial .anv-link-box.anv-button>a{display:block;margin:5px auto 0;max-width:150px}
+.anv-celestial .anv-link-box.anv-search,.anv-celestial .anv-link-box.anv-bag{width:auto;height:auto}
+.anv-celestial .anv-link-box.anv-search>span,.anv-celestial .anv-link-box.anv-bag>span{display:none}
 .anv-celestial .anv-link-box>a:focus{outline:2px solid #d4a3c0;outline-offset:3px}
 .anv-celestial .anv-topnav>.anv-link-box{display:inline-block;white-space:nowrap;padding:9px 0}
 .anv-celestial .anv-section-nav>.anv-link-box{position:relative;padding:7px 11px;font-size:14px;border:1px solid transparent;border-radius:8px 8px 2px 2px}

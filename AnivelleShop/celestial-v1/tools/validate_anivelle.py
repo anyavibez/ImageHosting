@@ -51,8 +51,9 @@ def validate():
         assert p.headings==1, f'{file.name}: expected one h1'
         assert len(p.ids)==len(set(p.ids)), f'{file.name}: duplicate IDs'
         assert '<script' not in text, 'Shop must work without scripts'
-        assert 'anv-arrival-grid' in text and 'anv-card-flourish' in text
-        assert 'anv-arrivals' in p.ids
+        assert 'anv-gallery' in p.ids and 'anv-card-flourish' in text
+        assert 'New Arrivals' not in text and 'Explore Collection' not in text
+        assert 'anv-arrivals' not in p.ids
         section='home' if file.name=='index.html' else file.stem.removeprefix('anivelle-')
         assert p.active==[section], f'Incorrect active section in {file.name}'
         assert len(p.sections)==10
@@ -78,7 +79,7 @@ def validate():
         filtered=re.sub(r'<a\b[^>]*>.*?</a>','',html,flags=re.S).replace('\\','')
         fp=Page(filtered)
         assert len(fp.images)==len(p.images), 'Images must survive removal of link blocks'
-        for label in ['AnivelleShop','Clothing','Accessories','Lunar Waltz Dress','Starlit','New Arrivals']:
+        for label in ['AnivelleShop','Clothing','Accessories','Starlit','The Celestial Edit']:
             assert label in unescape(filtered), f'Visible label lost if links are removed: {label}'
         assert '2726' not in filtered and '2727' not in filtered
         assert not re.search(r'<(?:svg|script|iframe|form|input|button|header|footer|nav|section|article|details|summary)\b',html,re.I)
@@ -99,7 +100,12 @@ def validate():
     assert '@container' not in css and 'cqw' not in css and '@import' not in css
     home=(OUT/'embeds'/'anivelle-home.html').read_text(encoding='ascii')
     hp=Page(home)
-    assert hp.headings==1 and 'anv-arrivals' in hp.ids and '<svg' not in home
+    assert hp.headings==1 and 'anv-gallery' in hp.ids and '<svg' not in home
+    assert 'text-indent:-9999px' not in home and 'color:transparent' not in home
+    assert 'New Arrivals' not in home and 'Explore Collection' not in home
+    assert "cursor:url(" in home and 'anv-art-float' in home
+    assert (OUT/'assets'/'celestial-cursor.png').is_file()
+    assert (OUT/'assets'/'celestial-cursor-link.png').is_file()
     assert len(list((OUT/'embeds').glob('*.html')))==10
     assert len(used)==11
     summary={'standalone_pages':10,'IMVU_HTML_embeds':10,'IMVU_TXT_embeds':10,'generated_assets_available':28,'shared_layout_assets':len(used),'same_layout_all_pages':True,'only_active_class_differs':True,'navbar_destinations':'all 100 local section links verified','active_sections':'all 10 verified','html_nesting':'valid','local_links':'valid','symbols':'ASCII HTML entities','scripts_svg_forms':'none','reduced_motion':'supported'}

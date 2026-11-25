@@ -1,6 +1,6 @@
 # AnivelleShop — one common full-page theme
 
-All 10 pages now use the same reference-inspired layout, hero image, illustrated collection cards, five arrival previews, couture banner, navbar, and footer. Only the active section changes. The previous category copy and artwork remain available in content.json and the asset bundle.
+All 10 pages use the same reference-inspired layout, hero image, illustrated collection cards, floating Celestial Edit art gallery, couture banner, navbar, and footer. Only the active section changes. New Arrivals and Explore Collection have been removed. Their five images are reused in the decorative gallery. The previous category copy and artwork remain available in content.json and the asset bundle.
 
 ## The one value to change
 
@@ -34,15 +34,23 @@ The creator-only class additionally reveals the existing **DO NOT BUY / Not for 
 - **Downloadable website:** open index.html. All 10 section links open the corresponding full themed page, which carries its own active state. The three collection illustrations also open their matching category page.
 - **IMVU fragments:** links open Anivelle Studio's existing IMVU catalogue categories. Individual product-page links have been left out as requested. An HTML description cannot change IMVU's external catalogue page or automatically inject this theme there.
 - Home, Furniture, Rooms, Clothing, Accessories, Poses, Body, Pets, Cutouts, and Creator Note appear together in the header category navbar.
-- Collections and New Arrivals in the upper navbar jump to those sections of the same full page.
+- Collections in the downloadable website jumps to its collection section. In the IMVU fragment it opens the catalogue. There is no New Arrivals navigation item or Explore Collection button.
 
 ## IMVU compatibility
 
-The snippets use basic HTML elements and scoped CSS. They contain no JavaScript, SVG, forms, iframes, external fonts, icon fonts, data URLs, container queries, cursor replacement, or page-header overrides. Visible symbols use numeric HTML entities; the IMVU stylesheet has no backslash star escapes. CSS animations are cosmetic and disabled by prefers-reduced-motion.
+The snippets use basic HTML elements and scoped CSS. They contain no JavaScript, SVG, forms, iframes, external fonts, icon fonts, data URLs, container queries, or page-header overrides. Visible symbols use numeric HTML entities; the IMVU stylesheet has no backslash star escapes. CSS animations are cosmetic and disabled by prefers-reduced-motion.
 
-The IMVU compatibility patch keeps the logo, navigation labels, buttons, and every image card in ordinary DIV/SPAN/IMG elements, outside links. Links contain only plain text and use only href and target="_top" attributes. They are positioned over the corresponding visible element. This prevents a removed link block from also deleting the visual content. Regression checks deliberately remove every anchor and strip backslashes, then confirm that all artwork and essential labels remain. This models the screenshot's symptoms; it is not a claim that IMVU's exact save filter has been reproduced.
+The IMVU compatibility patch keeps the logo, navigation labels, buttons, and every image card in ordinary DIV/SPAN/IMG elements, outside links. Links contain only plain text and use only href and target="_top" attributes. The IMVU edition has visible Open, View Collection, Search, Shop, and Open Shop links; it does not hide clickable text behind transparent overlays. If IMVU removes a link, its surrounding image and label remain visible. Regression checks deliberately remove every anchor and strip backslashes, then confirm that all artwork and essential labels remain. This models the screenshot's symptoms; it is not a claim that IMVU's exact save filter has been reproduced.
 
-The hearts are decorative. The arrival illustrations say Style Preview and link to category listings; they do not claim real prices, stock, product IDs, or wishlist functionality. Nothing replaces IMVU's own purchasing controls.
+The Accessories Open button was clicked in a browser test and opened Anivelle Studio's real IMVU Accessories catalogue. This confirms the generated link's destination before IMVU processes a pasted description. CSS cannot restore a hyperlink if the platform removes its anchor tag.
+
+## Animation and cursor
+
+The theme has floating gallery frames, breathing hero artwork, sparkling accents, moving silk, button sheen, lift and press effects, collection-card tilt, glow, and keyboard focus effects. Reduced-motion preferences disable animation. The two small code-drawn 32×32 PNG star cursors are in assets/; ui-assets.json records their hashes. Normal auto/pointer cursors are fallbacks when the browser or IMVU does not allow the custom image. There is no JavaScript cursor follower.
+
+IMVU's [homepage guidance](https://support.imvu.com/support/solutions/articles/154000196786-faq-about-homepages) documents target="_top" for leaving a frame. [MDN's cursor reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor) describes image cursors and their fallback keywords.
+
+The Celestial Edit gallery is decorative. It does not claim real prices, stock, product IDs, or wishlist functionality. Nothing replaces IMVU's own purchasing controls.
 
 Local markup, navigation, active-state, desktop, and narrow-screen checks are included. A live save through IMVU's HTML filter has not been tested.
 
