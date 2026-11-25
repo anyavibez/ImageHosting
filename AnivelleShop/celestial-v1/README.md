@@ -1,5 +1,11 @@
 # AnivelleShop — one common full-page theme
 
+## Single-file page switching candidate
+
+`single-file/anivelle-imvu-tabs.html` (and its identical TXT version) includes all ten sections in one HTML description. Its category labels toggle radio controls; CSS `:checked` selectors show the matching section and active highlight without navigation or JavaScript. `single-file/preview.html` is the browser preview. All ten tabs were clicked and verified to show exactly one matching section while the URL stayed unchanged.
+
+This version requires IMVU to retain INPUT type=radio, LABEL/for attributes, and the relevant CSS selectors. Its behavior after a live IMVU save is **not verified**. It is provided separately from the simple-link edition below. Rebuild it with `python tools/build_anivelle_tabs.py`.
+
 All 10 pages use the same reference-inspired layout, hero image, illustrated collection cards, floating Celestial Edit art gallery, couture banner, navbar, and footer. Only the active section changes. New Arrivals and Explore Collection have been removed. Their five images are reused in the decorative gallery. The previous category copy and artwork remain available in content.json and the asset bundle.
 
 ## The one value to change
