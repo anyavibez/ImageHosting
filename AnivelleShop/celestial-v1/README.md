@@ -38,7 +38,9 @@ The creator-only class additionally reveals the existing **DO NOT BUY / Not for 
 
 ## IMVU compatibility
 
-The snippets use basic HTML elements and scoped CSS. They contain no JavaScript, SVG, forms, iframes, external fonts, icon fonts, data URLs, container queries, cursor replacement, or page-header overrides. Symbols use numeric HTML entities; CSS decorations use CSS shapes and escaped symbols. CSS animations are cosmetic and disabled by prefers-reduced-motion.
+The snippets use basic HTML elements and scoped CSS. They contain no JavaScript, SVG, forms, iframes, external fonts, icon fonts, data URLs, container queries, cursor replacement, or page-header overrides. Visible symbols use numeric HTML entities; the IMVU stylesheet has no backslash star escapes. CSS animations are cosmetic and disabled by prefers-reduced-motion.
+
+The IMVU compatibility patch keeps the logo, navigation labels, buttons, and every image card in ordinary DIV/SPAN/IMG elements, outside links. Links contain only plain text and use only href and target="_top" attributes. They are positioned over the corresponding visible element. This prevents a removed link block from also deleting the visual content. Regression checks deliberately remove every anchor and strip backslashes, then confirm that all artwork and essential labels remain. This models the screenshot's symptoms; it is not a claim that IMVU's exact save filter has been reproduced.
 
 The hearts are decorative. The arrival illustrations say Style Preview and link to category listings; they do not claim real prices, stock, product IDs, or wishlist functionality. Nothing replaces IMVU's own purchasing controls.
 

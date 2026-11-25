@@ -1,6 +1,8 @@
 """Build the celestial website and self-contained IMVU HTML from preserved content."""
 from pathlib import Path
 from html import escape
+from html import unescape
+from html.parser import HTMLParser
 from urllib.parse import urlparse, parse_qs
 import json
 import re
@@ -173,8 +175,55 @@ def common_body(active='home', embed=False, root_page=False):
 
 def fragment(active):
     comment='<!-- Change only active-home on the first DIV to choose the active section. -->\n'
-    html=comment+common_body(active,embed=True)+'\n<style type="text/css">\n'+CSS+'\n</style>\n'
+    html=comment+imvu_link_fallback(common_body(active,embed=True))+'\n<style type="text/css">\n'+imvu_symbol_css(CSS)+'\n</style>\n'
     return html.encode('ascii','xmlcharrefreplace').decode('ascii')
+
+class AnchorAttributes(HTMLParser):
+    def handle_starttag(self,tag,attrs): self.attrs=dict(attrs)
+
+def imvu_link_fallback(html):
+    """Never put essential artwork or labels inside a filter-sensitive anchor."""
+    html=html.replace('<a href="#anv-top">Back to top</a>','')
+    def replace(match):
+        parser=AnchorAttributes(); parser.feed('<a '+match[1]+'>')
+        attrs=parser.attrs; href=attrs['href']; body=match[2]
+        if href.startswith('#'):
+            href=ALL if href=='#anv-arrivals' else CATALOG
+        query=parse_qs(urlparse(href).query)
+        if 'web_search.php' in href:
+            href='https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name'
+            if query.get('cat'): href+='&cat='+query['cat'][0]
+            if query.get('quickfind')==['new']: href+='&quickfind=new&sortorder=desc'
+        label=unescape(re.sub('<[^>]+>',' ',body))
+        label=' '.join(label.split()).replace('(current section)','').strip()
+        if not label: label=attrs.get('aria-label','Open IMVU catalogue')
+        classes='anv-link-box '+attrs.get('class','anv-inline-link')
+        return f'<div class="{esc(classes)}">{body}<a href="{esc(href)}" target="_top">{esc(label)}</a></div>'
+    html=re.sub(r'<a\b([^>]*)>(.*?)</a>',replace,html,flags=re.S)
+    html=re.sub(r'(<h2>)([^<]+)(</h2>)',r'\1<span class="anv-heading-star" aria-hidden="true">&#10022;</span>\2<span class="anv-heading-star" aria-hidden="true">&#10022;</span>\3',html)
+    html=html.replace('<div class="anv-hero-divider" aria-hidden="true"></div>','<div class="anv-hero-divider" aria-hidden="true"><span>&#10022;</span></div>')
+    # The active marker remains outside the actual link, like the visible label.
+    html=html.replace('<span class="anv-current-label">','<span class="anv-active-star" aria-hidden="true">&#10022;</span><span class="anv-current-label">')
+    return html
+
+def imvu_symbol_css(css):
+    # IMVU's save path can drop CSS backslashes, exposing "2726" as text.
+    return re.sub(r"content:'\\[0-9a-fA-F]+\s*'", "content:''",css)+IMVU_LINK_CSS
+
+IMVU_LINK_CSS='''
+.anv-celestial .anv-link-box{position:relative}
+.anv-celestial .anv-link-box>a{display:block;position:absolute;inset:0;width:100%;height:100%;z-index:8;overflow:hidden;text-indent:-9999px;color:transparent;background:transparent;font-size:16px}
+.anv-celestial .anv-link-box>a:focus{outline:2px solid #d4a3c0;outline-offset:3px}
+.anv-celestial .anv-topnav>.anv-link-box{display:inline-block;white-space:nowrap;padding:9px 0}
+.anv-celestial .anv-section-nav>.anv-link-box{position:relative;padding:7px 11px;font-size:14px;border:1px solid transparent;border-radius:8px 8px 2px 2px}
+.anv-celestial .anv-footer-nav>.anv-link-box{display:inline-block}
+.anv-celestial .anv-section-head h2:before,.anv-celestial .anv-section-head h2:after,.anv-celestial .anv-hero-divider:after{display:none}
+.anv-celestial .anv-heading-star{font:17px Georgia,serif;color:#bd8e9f;display:inline-block;margin:0 14px;vertical-align:middle}
+.anv-celestial .anv-editorial h2>.anv-heading-star{display:none}
+.anv-celestial .anv-hero-divider>span{position:absolute;left:45%;top:-14px;font-size:18px;color:#ffe1ed}
+.anv-celestial .anv-active-star{display:none;position:absolute;left:45%;bottom:-11px;color:#ffe1ed;font-size:12px}
+.anv-celestial .anv-section-nav .anv-link-box:after{display:none}
+'''+','.join('.anv-celestial.active-'+s+' .anv-link-'+s+' .anv-active-star' for s,_,_ in SECTIONS)+'{display:inline}\n'
 
 def build():
     (OUT/'pages').mkdir(exist_ok=True); (OUT/'embeds').mkdir(exist_ok=True)

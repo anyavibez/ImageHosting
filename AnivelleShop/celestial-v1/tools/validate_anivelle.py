@@ -12,20 +12,25 @@ OUT=ROOT if (ROOT/'content.json').exists() else ROOT/'AnivelleShop'
 
 class Page(HTMLParser):
     def __init__(self, html):
-        super().__init__(); self.ids=[]; self.links=[]; self.images=[]; self.headings=0; self.stack=[]; self.sections={}; self.active=[]
+        super().__init__(); self.ids=[]; self.links=[]; self.images=[]; self.headings=0; self.stack=[]; self.sections={}; self.active=[]; self.section_context={}; self.link_attributes=[]; self.artwork_in_links=0
         self.feed(html)
         assert not self.stack, f'Unclosed HTML elements: {self.stack}'
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
         for cls in a.get('class','').split():
             if cls.startswith('active-'): self.active.append(cls[7:])
-            if cls.startswith('anv-link-'): self.sections[cls[9:]]=a.get('href')
+            if cls.startswith('anv-link-') and cls[9:] in {'home','shop','rooms','clothing','accessories','avatar-poses','body','pets','cutouts','creator-only'}:
+                if tag=='a': self.sections[cls[9:]]=a.get('href')
+                else: self.section_context[len(self.stack)]=cls[9:]
         if 'id' in a: self.ids.append(a['id'])
         if tag=='a':
+            self.link_attributes.append(a)
+            if self.section_context: self.sections[self.section_context[max(self.section_context)]]=a.get('href')
             self.links.append(a.get('href',''))
             assert a.get('href'), 'Empty link'
             if a.get('target')=='_blank': assert 'noopener' in a.get('rel',''), 'Missing rel=noopener'
         if tag=='img':
+            if 'a' in self.stack: self.artwork_in_links+=1
             assert a.get('alt'), 'Image missing meaningful alternative text'
             self.images.append(a['src'])
         if tag=='h1': self.headings+=1
@@ -33,6 +38,7 @@ class Page(HTMLParser):
     def handle_endtag(self, tag):
         assert self.stack and self.stack[-1]==tag, f'Mismatched closing {tag}; open {self.stack[-4:]}'
         self.stack.pop()
+        self.section_context.pop(len(self.stack),None)
 
 def validate():
     data=json.loads((OUT/'content.json').read_text(encoding='utf-8'))
@@ -66,6 +72,15 @@ def validate():
         html=(OUT/'embeds'/name).read_text(encoding='utf-8'); p=Page(html)
         assert p.headings==1
         assert html.isascii(), 'IMVU snippet must use ASCII with numeric HTML entities'
+        assert p.artwork_in_links==0, 'IMVU artwork must not be nested inside links'
+        assert not re.search(r'\\272[67]',html), 'IMVU CSS must not contain backslash star escapes'
+        assert all(set(a)=={'href','target'} and a['target']=='_top' for a in p.link_attributes), 'IMVU links must use only plain href and target attributes'
+        filtered=re.sub(r'<a\b[^>]*>.*?</a>','',html,flags=re.S).replace('\\','')
+        fp=Page(filtered)
+        assert len(fp.images)==len(p.images), 'Images must survive removal of link blocks'
+        for label in ['AnivelleShop','Clothing','Accessories','Lunar Waltz Dress','Starlit','New Arrivals']:
+            assert label in unescape(filtered), f'Visible label lost if links are removed: {label}'
+        assert '2726' not in filtered and '2727' not in filtered
         assert not re.search(r'<(?:svg|script|iframe|form|input|button|header|footer|nav|section|article|details|summary)\b',html,re.I)
         assert (OUT/'embeds'/name.replace('.html','.txt')).read_text(encoding='utf-8')==html
         assert p.active==[section] and len(p.sections)==10
