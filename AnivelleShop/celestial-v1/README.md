@@ -35,13 +35,13 @@ Each matching HTML file contains the same complete code as its TXT version. All 
 
 The creator-only class additionally reveals the existing **DO NOT BUY / Not for sale** notice. The personal ribbon restriction is retained.
 
-## Enhanced single-file edition
+## Single-file section visibility fix
 
-Use `single-file/anivelle-imvu-tabs.txt` for the complete ten-panel description in one file. Rebuild it with `python tools/build_anivelle_tabs.py` (which calls `build_anivelle_hash.py`). Ordinary hash links with `target="_self"` replace the radio/label technique that failed in the supplied saved-page screenshots. The links stay within the description frame; CSS `:target` selects the panel and active navbar box. No JavaScript or product-page URLs are used.
+Use `single-file/anivelle-imvu-tabs.txt`, replacing the entire old description. Rebuild with `python tools/build_anivelle_tabs.py` (calls `build_anivelle_hash.py`). This edition contains all ten sections in one continuous page. Every section has inline `display:block`; navbar links jump to the actual section container. Each section has a Back to sections link. It no longer provides exclusive page switching.
 
-This edition has ten rounded navbar boxes, uniform editorial gallery cards, a solid framed Copyright & DMCA panel, hover effects, and glowing star dividers. Essential visual styles are inline, and the smaller interaction stylesheet is placed first. Celestial Couture has Clothing and Accessories section links. The tagline remains “Your world. Your style.” The broken Discover the Look control is removed.
+The previous CSS candidate hid nine sections and depended on `:target` sibling selectors to reveal them. That is unsafe when a saved page loses switching selectors or targets. This version never hides content and does not require radio controls, `:checked`, or `:target` for visibility or navigation. `:target` is used only for a cosmetic outline. Essential card, navbar and copyright styles remain inline.
 
-All ten section links, active states and both couture controls were verified in a browser preview, with desktop and 390-pixel layouts checked. IMVU must preserve fragment links, IDs, and `:target` sibling selectors on save; this revised technique has not been verified through its live save filter. If the whole stylesheet is removed, all sections remain visible. The older catalogue-link edition below is retained separately.
+Browser checks reached all ten sections (each visible and positioned 18 pixels below the viewport top), and the return link reached the navbar. The saved IMVU filter is still unverified; if it removes fragment links or IDs, navigation can be affected, but this version's sections remain visible. Completely replace the old code so its hiding rules cannot remain.
 
 ## Navigation destinations
 

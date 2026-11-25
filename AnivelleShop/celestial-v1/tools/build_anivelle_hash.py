@@ -1,4 +1,4 @@
-"""One-file shop with ordinary section links, :target and inline visual fallbacks."""
+"""One-file shop with direct section anchors and no hidden content."""
 from build_anivelle import OUT, HOST, DATA, HEADLINES, HERO, SECTIONS, esc
 
 def asset(name): return HOST+name+'.webp'
@@ -49,8 +49,6 @@ CSS='''
 .anv-celestial a:focus-visible{outline:3px solid #bc86b1;outline-offset:4px}
 .anv-celestial a{cursor:url('CURSOR') 15 13,pointer}
 .anv-celestial .anv-nav-box{transition:transform .25s,box-shadow .25s;position:relative;background:linear-gradient(145deg,#fff8fd,#efddf0)!important}
-.anv-celestial .anv-nav-box:first-child{background:linear-gradient(145deg,#a270a0,#69496e)!important;color:#fff1fb!important}
-.anv-page-marker:target ~ .anv-tab-navigation > a:first-child{background:linear-gradient(145deg,#fff8fd,#efddf0)!important;color:#78527a!important}
 .anv-celestial .anv-nav-box:before{content:'';position:absolute;top:5px;left:10px;right:10px;height:1px;background:#fff}
 .anv-celestial .anv-nav-box:hover{transform:translateY(-4px);border-color:#efc2de!important;box-shadow:0 0 20px #edc4e65c,inset 0 0 0 3px #fff!important}
 .anv-celestial .anv-nav-box:active{transform:translateY(1px) scale(.98)}
@@ -62,20 +60,18 @@ CSS='''
 .anv-celestial .anv-edit-card:hover img{transform:scale(1.025)}
 .anv-celestial .anv-divider{animation:anv-glow 5s ease-in-out infinite}
 @keyframes anv-glow{0%,100%{opacity:.6}50%{opacity:1;text-shadow:0 0 15px #bd8eae}}
-.anv-celestial .anv-page-marker{display:block;height:0;overflow:hidden}
-.anv-celestial .anv-tab-panel{display:none}
-.anv-celestial .anv-panel-home{display:block}
-TARGETS
+.anv-celestial .anv-tab-panel{display:block}
+.anv-celestial .anv-tab-panel:target{outline:2px solid #d0a4c3;outline-offset:-2px}
+.anv-celestial .anv-nav-box:focus{background:#936e96!important;color:#fff5fb!important}
 @media(max-width:700px){.anv-celestial .anv-nav-box{flex-basis:calc(33.333% - 8px)!important;padding:13px 6px!important}.anv-celestial .anv-header{flex-wrap:wrap;justify-content:center!important;text-align:center}.anv-celestial .anv-tagline{display:none}.anv-celestial .anv-hero{min-height:400px!important}.anv-celestial .anv-hero-copy{min-height:400px!important;width:65%!important;padding:80px 5% 60px!important}.anv-celestial h1{font-size:45px!important}.anv-celestial .anv-edit-card{flex:0 1 calc(50% - 8px)!important}.anv-celestial .anv-edit-copy{padding:18px 12px!important}.anv-celestial .anv-edit-copy h3{font-size:22px!important}.anv-celestial .anv-couture{padding:18px!important}.anv-celestial .anv-couture-copy{padding:24px 14px!important}.anv-celestial .anv-copyright{padding:30px 6%!important}.anv-celestial .anv-heading h2{font-size:28px!important}}
 @media(prefers-reduced-motion:reduce){.anv-celestial *{animation:none!important;transition:none!important}}
 '''
 
 def build():
-    markers=''.join(f'<span class="anv-page-marker" id="anv-page-{s}"></span>' for s,_,_ in SECTIONS)
     header=el('div','anv-header','display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4%;background:#302639;color:#fff0fa;border-bottom:1px solid #99758f',el('div','','',el('div','','font:italic 37px/1 Georgia,serif;color:#fff0f8','&#10022; AnivelleShop')+el('div','','font:8px/1.5 Arial,sans-serif;letter-spacing:2.5px;margin-top:9px;color:#dec4d8','ANIME AVATAR FASHION BOUTIQUE'))+el('div','anv-tagline','padding:14px 20px;border:1px solid #76596f;border-radius:24px;background:#413047;font:italic 17px Georgia,serif;color:#e9c9e0','Your world. Your style.'))
     icons=['&#10022;','&#8962;','&#9789;','&#9813;','&#10023;','&#9825;','&#10047;','&#10048;','&#9986;','&#9830;']
-    nav=el('div','anv-tab-navigation','display:flex;flex-wrap:wrap;gap:10px;padding:20px 4% 24px;background:#302639;border-bottom:4px double #c6a1b9',''.join(el('a','anv-nav-box','display:block;flex:1 1 calc(20% - 10px);box-sizing:border-box;padding:17px 8px;border:1px solid #c8a7bf;border-radius:15px;background:#f5e6f2;box-shadow:inset 0 0 0 3px #fff5fb;text-align:center;text-decoration:none;color:#78527a;font:15px/1.25 Georgia,serif',icon+' &nbsp; '+esc(label),f' href="#anv-page-{section}" target="_self"') for (section,label,_),icon in zip(SECTIONS,icons)))
-    panels=[]; targets=''
+    nav=el('div','anv-tab-navigation','display:flex;flex-wrap:wrap;gap:10px;padding:20px 4% 24px;background:#302639;border-bottom:4px double #c6a1b9',''.join(el('a','anv-nav-box','display:block;flex:1 1 calc(20% - 10px);box-sizing:border-box;padding:17px 8px;border:1px solid #c8a7bf;border-radius:15px;background:#f5e6f2;box-shadow:inset 0 0 0 3px #fff5fb;text-align:center;text-decoration:none;color:#78527a;font:15px/1.25 Georgia,serif',icon+' &nbsp; '+esc(label),f' href="#anv-page-{section}" target="_self"') for (section,label,_),icon in zip(SECTIONS,icons)), ' id="anv-navigation"')
+    panels=[]
     for section,label,_ in SECTIONS:
         record=DATA.get('anivelle-'+section+'.html',{})
         subtitle='Original Anime Avatar Fashion for Your Unique Style' if section=='home' else record['av-sub'][0]
@@ -85,14 +81,12 @@ def build():
         else:
             cards=''.join(el('div','anv-detail-card','flex:1 1 240px;padding:26px;border:1px solid #d9bad2;border-radius:20px;background:#fff7fc',el('div','','font:25px Georgia,serif;color:#b589a9;margin-bottom:15px','&#10023;')+el('h3','','font:italic 24px/1.25 Georgia,serif;color:#76527a;margin:0 0 12px',esc(t))+el('p','','font:15px/1.75 Georgia,serif;color:#896b83;margin:0',esc(d))) for t,d in zip(record['av-show-name'],record['av-show-desc']))
             content+=divider()+el('div','anv-section','padding:30px 4%',heading(subtitle,'Inside the collection')+el('p','','max-width:700px;margin:0 auto 25px;text-align:center;font:16px/1.75 Georgia,serif;color:#886980',esc(record['av-sec-text'][0]))+el('div','','display:flex;flex-wrap:wrap;gap:18px',cards))
-        panels.append(el('div',f'anv-tab-panel anv-panel-{section}','',content,' role="region" aria-label="'+esc(label)+'"'))
-        targets+=f'#anv-page-{section}:target ~ .anv-tab-panels > .anv-tab-panel'+'{display:none}\n'
-        targets+=f'#anv-page-{section}:target ~ .anv-tab-panels > .anv-panel-{section}'+'{display:block}\n'
-        targets+=f'#anv-page-{section}:target ~ .anv-tab-navigation > a[href="#anv-page-{section}"]'+'{background:linear-gradient(145deg,#a270a0,#69496e)!important;color:#fff1fb!important;border-color:#f1cce3!important;box-shadow:inset 0 0 0 3px #d9b0d04d,0 0 17px #c49abd66!important}\n'
-    css=CSS.replace('TARGETS',targets).replace('CURSOR',HOST+'celestial-cursor-link.png')
+        content+=el('div','','text-align:center;padding:12px 4% 28px',el('a','anv-action',BUTTON,'Back to sections', ' href="#anv-navigation" target="_self"'))
+        panels.append(el('div',f'anv-tab-panel anv-panel-{section}','display:block;scroll-margin-top:18px',content,f' id="anv-page-{section}" role="region" aria-label="'+esc(label)+'"'))
+    css=CSS.replace('CURSOR',HOST+'celestial-cursor-link.png')
     footer=el('div','','padding:32px 4%;text-align:center;background:#302639;color:#e3c7db',el('div','','font:italic 30px Georgia,serif','AnivelleShop')+el('p','','font:12px/1.8 Arial,sans-serif;margin:12px 0 0','Original creations for your unique style.<br>&#169; 2026 Anivelle Studio'))
-    body=el('div','anv-celestial','box-sizing:border-box;position:relative;max-width:1100px;margin:0 auto;overflow:hidden;background:#fcf5fb;color:#6f5372;font:16px/1.6 Georgia,serif;text-align:left;border:1px solid #d5b9d0',markers+header+nav+el('div','anv-tab-panels','', ''.join(panels))+divider()+gallery()+divider()+couture()+divider()+rights_notice()+footer)
-    code='<!-- One file. Ordinary section links and CSS :target. No input, label, or JavaScript. -->\n<style type="text/css">\n'+css+'\n</style>\n'+body+'\n'
+    body=el('div','anv-celestial','box-sizing:border-box;position:relative;max-width:1100px;margin:0 auto;background:#fcf5fb;color:#6f5372;font:16px/1.6 Georgia,serif;text-align:left;border:1px solid #d5b9d0',header+nav+el('div','anv-tab-panels','', ''.join(panels))+divider()+gallery()+divider()+couture()+divider()+rights_notice()+footer)
+    code='<!-- One file. Direct section anchors. Every section visible by default. No hidden tabs or JavaScript. -->\n<style type="text/css">\n'+css+'\n</style>\n'+body+'\n'
     code=code.encode('ascii','xmlcharrefreplace').decode('ascii')
     assert '<input' not in code and '<label' not in code and '<script' not in code
     assert code.count('class="anv-tab-panel ')==10
@@ -100,7 +94,8 @@ def build():
     folder=OUT/'single-file'; folder.mkdir(exist_ok=True)
     for suffix in ('html','txt'): (folder/f'anivelle-imvu-tabs.{suffix}').write_text(code,encoding='ascii')
     (folder/'preview.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AnivelleShop</title><style>body{margin:0;background:#e9dfeb}</style></head><body>'+code+'</body></html>',encoding='ascii')
-    (folder/'README.txt').write_text('SINGLE-FILE CELESTIAL SHOP - SECTION LINKS\n\nPaste all of anivelle-imvu-tabs.txt, replacing the entire previous description.\n\nNavbar: ten boxed links. Plain hash anchors with target=_self (stay inside the description frame) replace the radio/label technique that failed in the supplied saved-page screenshots. CSS :target switches the visible panel and active navbar box. Essential card, copyright and navbar styles are inline. The smaller stylesheet is at the START of the code. No scripts, forms, inputs, labels, or product-page URLs.\n\nGallery: five uniform editorial cards. Copyright: solid framed panel and two inset cards. Couture: Clothing and Accessories section links.\n\nThe live IMVU save filter still needs verification: it must retain href fragments, IDs and :target selectors for same-file switching. If the whole stylesheet is removed, all sections remain visible rather than disappearing. No code can restore attributes that the platform deletes. The older simple-link edition is kept separately.\n',encoding='ascii')
-    print(f'Built {len(code):,}-byte file: ten hash-link panels, inline visuals, no radio controls.')
+    (folder/'README.txt').write_text('SINGLE-FILE CELESTIAL SHOP - VISIBLE SECTIONS\n\nReplace the ENTIRE old description with anivelle-imvu-tabs.txt. Do not append this file to the previous code: old hiding CSS can hide the new content.\n\nFIX: all ten sections have display:block directly on their containers. Navbar, collection and Couture links point directly to the matching section ID, within the description frame. No radio controls, hidden panels or CSS switching selectors are required.\n\nThis edition uses same-page section jumps, not exclusive page switching. Every section remains readable if the stylesheet or fragment navigation is removed. Decorative CSS handles hover, motion and responsive styling only. Essential navbar, card and copyright styling is inline.\n\nIMVU can still remove links or IDs when saving; that would affect jumping but cannot hide any section in this edition. Browser verification does not reproduce the live IMVU save filter.\n',encoding='ascii')
+    print(f'Built {len(code):,}-byte file: ten always-visible sections and direct anchors.')
+
 
 if __name__=='__main__': build()

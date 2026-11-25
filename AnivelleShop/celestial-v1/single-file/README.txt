@@ -1,9 +1,9 @@
-SINGLE-FILE CELESTIAL SHOP - SECTION LINKS
+SINGLE-FILE CELESTIAL SHOP - VISIBLE SECTIONS
 
-Paste all of anivelle-imvu-tabs.txt, replacing the entire previous description.
+Replace the ENTIRE old description with anivelle-imvu-tabs.txt. Do not append this file to the previous code: old hiding CSS can hide the new content.
 
-Navbar: ten boxed links. Plain hash anchors with target=_self (stay inside the description frame) replace the radio/label technique that failed in the supplied saved-page screenshots. CSS :target switches the visible panel and active navbar box. Essential card, copyright and navbar styles are inline. The smaller stylesheet is at the START of the code. No scripts, forms, inputs, labels, or product-page URLs.
+FIX: all ten sections have display:block directly on their containers. Navbar, collection and Couture links point directly to the matching section ID, within the description frame. No radio controls, hidden panels or CSS switching selectors are required.
 
-Gallery: five uniform editorial cards. Copyright: solid framed panel and two inset cards. Couture: Clothing and Accessories section links.
+This edition uses same-page section jumps, not exclusive page switching. Every section remains readable if the stylesheet or fragment navigation is removed. Decorative CSS handles hover, motion and responsive styling only. Essential navbar, card and copyright styling is inline.
 
-The live IMVU save filter still needs verification: it must retain href fragments, IDs and :target selectors for same-file switching. If the whole stylesheet is removed, all sections remain visible rather than disappearing. No code can restore attributes that the platform deletes. The older simple-link edition is kept separately.
+IMVU can still remove links or IDs when saving; that would affect jumping but cannot hide any section in this edition. Browser verification does not reproduce the live IMVU save filter.
