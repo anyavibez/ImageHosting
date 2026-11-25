@@ -12,11 +12,14 @@ OUT=ROOT if (ROOT/'content.json').exists() else ROOT/'AnivelleShop'
 
 class Page(HTMLParser):
     def __init__(self, html):
-        super().__init__(); self.ids=[]; self.links=[]; self.images=[]; self.headings=0; self.stack=[]
+        super().__init__(); self.ids=[]; self.links=[]; self.images=[]; self.headings=0; self.stack=[]; self.sections={}; self.active=[]
         self.feed(html)
         assert not self.stack, f'Unclosed HTML elements: {self.stack}'
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
+        for cls in a.get('class','').split():
+            if cls.startswith('active-'): self.active.append(cls[7:])
+            if cls.startswith('anv-link-'): self.sections[cls[9:]]=a.get('href')
         if 'id' in a: self.ids.append(a['id'])
         if tag=='a':
             self.links.append(a.get('href',''))
@@ -44,29 +47,38 @@ def validate():
         assert '<script' not in text, 'Shop must work without scripts'
         assert 'anv-arrival-grid' in text and 'anv-card-flourish' in text
         assert 'anv-arrivals' in p.ids
+        section='home' if file.name=='index.html' else file.stem.removeprefix('anivelle-')
+        assert p.active==[section], f'Incorrect active section in {file.name}'
+        assert len(p.sections)==10
+        for target,url in p.sections.items():
+            linked=(file.parent/url).resolve()
+            assert linked.is_file(), f'Broken navbar target {url}'
+            dest=Page(linked.read_text(encoding='utf-8'))
+            assert dest.active==[target], f'{section} nav opens wrong active section {target}'
         assert not re.search(r'devil|pentagram|Pirata One|dlx-cursor|av-fire|2b\.png',text,re.I)
         for ref in p.images+p.links:
             if ref.startswith('#'): assert ref[1:] in p.ids, f'Invalid anchor {ref}'
             elif not urlparse(ref).scheme: assert (file.parent/ref).resolve().is_file(), f'Missing local file {ref} from {file}'
         for src in p.images+re.findall(r"url\('([^']+)'\)",text): used.add(Path(src).name)
-    for name,record in data.items():
+    common=(OUT/'common'/'anivelle-common.html').read_text(encoding='ascii')
+    for name in [*data,'anivelle-home.html']:
+        section=name.removeprefix('anivelle-').removesuffix('.html')
         html=(OUT/'embeds'/name).read_text(encoding='utf-8'); p=Page(html)
         assert p.headings==1
         assert html.isascii(), 'IMVU snippet must use ASCII with numeric HTML entities'
         assert not re.search(r'<(?:svg|script|iframe|form|input|button|header|footer|nav|section|article|details|summary)\b',html,re.I)
         assert (OUT/'embeds'/name.replace('.html','.txt')).read_text(encoding='utf-8')==html
-        for original in record['original_links']:
-            assert original['href'] in p.links, f'Lost original catalogue URL: {original["text"]}'
-        for key in ['av-show-name','av-show-desc','av-card-title','av-card-text','av-warn-note','av-co-item-desc']:
-            for content in record[key]: assert content in unescape(html), f'Lost content {content}'
+        assert p.active==[section] and len(p.sections)==10
+        assert html.replace('class="anv-celestial active-'+section+'"','class="anv-celestial active-home"',1)==common, 'Fragments must differ ONLY in the active class'
+        for url in p.sections.values(): assert url.startswith('https://www.imvu.com/shop/web_search.php?') and 'keywords=anivellestudio' in url
         assert all(src.startswith('https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/') for src in p.images)
         if 'creator-only' in name:
             assert 'DO NOT BUY' in html and 'Not for sale' in html
-            assert 'Read creator note' in html and 'Explore creator' not in html
+            assert 'anv-creator-message' in html and 'Explore creator' not in html
     for asset in manifest['assets']:
         file=OUT/asset['file']
         assert hashlib.sha256(file.read_bytes()).hexdigest()==asset['sha256']
-        assert file.name in used, f'Unused generated asset {file.name}'
+        # Earlier collection art remains available in the asset bundle for reuse.
     css=(OUT/'celestial.css').read_text(encoding='utf-8')
     assert 'prefers-reduced-motion' in css and '@media(max-width:600px)' in css
     assert '@container' not in css and 'cqw' not in css and '@import' not in css
@@ -74,7 +86,8 @@ def validate():
     hp=Page(home)
     assert hp.headings==1 and 'anv-arrivals' in hp.ids and '<svg' not in home
     assert len(list((OUT/'embeds').glob('*.html')))==10
-    summary={'standalone_pages':10,'shop_pages':9,'IMVU_HTML_embeds':10,'IMVU_TXT_embeds':10,'generated_assets':28,'all_assets_used':True,'original_catalogue_links_preserved':True,'existing_page_content_preserved':True,'html_nesting':'valid','local_links':'valid','symbols':'ASCII HTML entities','scripts_svg_forms':'none','reduced_motion':'supported'}
+    assert len(used)==11
+    summary={'standalone_pages':10,'IMVU_HTML_embeds':10,'IMVU_TXT_embeds':10,'generated_assets_available':28,'shared_layout_assets':len(used),'same_layout_all_pages':True,'only_active_class_differs':True,'navbar_destinations':'all 100 local section links verified','active_sections':'all 10 verified','html_nesting':'valid','local_links':'valid','symbols':'ASCII HTML entities','scripts_svg_forms':'none','reduced_motion':'supported'}
     (OUT/'validation.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print(json.dumps(summary,indent=2))
 

@@ -129,20 +129,69 @@ def document(body, title, home=False):
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#302538"><meta name="description" content="Explore {esc(title)} by Anivelle Studio. The Celestial Atelier for your IMVU world."><title>{esc(title)} · AnivelleShop</title><link rel="stylesheet" href="{prefix}celestial.css"><style>html{{scroll-behavior:smooth}}body{{margin:0;padding:24px;background:#e9deed}}@media(max-width:650px){{body{{padding:0}}}}@media(prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}}}</style></head><body>{body}</body></html>'''
 
+SECTIONS = [('home','Home',''),*[(s,l,c) for s,l,_,_,c in CATEGORIES],('creator-only','Creator Note','')]
+
+def section_url(section, embed=False, root_page=False):
+    if embed:
+        return CATALOG if section in ('home','creator-only') else cat_url(next(c for s,_,c in SECTIONS if s==section))
+    if section=='home': return 'index.html' if root_page else '../index.html'
+    return page_url(section,root_page)
+
+def common_body(active='home', embed=False, root_page=False):
+    """One full layout. Only the root active-* class changes between IMVU copies."""
+    assert active in {s for s,_,_ in SECTIONS}, f'Unknown active section: {active}'
+    html=render('shop',DATA['anivelle-shop.html'],embed=False,home=True)
+    html=html.replace('class="anv-celestial"','class="anv-celestial active-'+active+'"',1)
+    # Replace the old, lower category directory with a persistent header navbar.
+    html=re.sub(r'<nav class="anv-categories".*?</nav>','',html,flags=re.S)
+    nav='<nav class="anv-categories anv-section-nav" aria-label="Shop sections">'
+    for section,label,_ in SECTIONS:
+        url=section_url(section,embed,root_page)
+        link=ext(url) if embed else f'href="{esc(url)}"'
+        nav+=f'<a class="anv-link-{section}" {link}>{esc(label)}<span class="anv-current-label"> (current section)</span></a>'
+    nav+='</nav>'
+    html=html.replace('</header>','</header>'+nav,1)
+    html=html.replace('>Home</a><a href="#anv-collections">Collections</a>', ' class="anv-top-home">Home</a><a class="anv-top-collections" href="#anv-collections">Collections</a>',1)
+    # All artwork, card order, headline, and footer remain the reference layout.
+    html=html.replace('Enjoy the collection and make your IMVU room unforgettable!','Original creations for your unique style.')
+    note=DATA['anivelle-creator-only.html']
+    warning=f'<div class="anv-warning anv-creator-message" id="anv-creator-note"><h2>DO NOT BUY</h2><h3>{esc(note["av-warn-sub"][0])}</h3><p>{esc(note["av-warn-note"][0])}</p><strong>Not for sale · Creator only</strong></div>'
+    html=html.replace('<div class="anv-section anv-featured"',warning+'<div class="anv-section anv-featured"',1)
+    # Route every collection illustration to its matching section, not a product.
+    for section,_,_ in SECTIONS:
+        if section=='home': continue
+        url=section_url(section,embed,root_page)
+        html=html.replace(f'href="pages/anivelle-{section}.html"',ext(url) if embed else f'href="{esc(url)}"')
+    url=section_url('home',embed,root_page)
+    html=html.replace('href="index.html"',ext(url) if embed else f'href="{esc(url)}"')
+    if not root_page and not embed:
+        html=html.replace('src="assets/','src="../assets/').replace("url('assets/","url('../assets/")
+    if embed:
+        html=html.replace('src="assets/','src="'+HOST).replace("url('assets/","url('"+HOST)
+        html=re.sub(r'<(/?)(?:header|nav|section|article|footer)\b',r'<\1div',html)
+    return html
+
+def fragment(active):
+    comment='<!-- Change only active-home on the first DIV to choose the active section. -->\n'
+    html=comment+common_body(active,embed=True)+'\n<style type="text/css">\n'+CSS+'\n</style>\n'
+    return html.encode('ascii','xmlcharrefreplace').decode('ascii')
+
 def build():
     (OUT/'pages').mkdir(exist_ok=True); (OUT/'embeds').mkdir(exist_ok=True)
     for name,record in DATA.items():
         slug=name.removeprefix('anivelle-').removesuffix('.html')
-        snippet='<style type="text/css">\n'+CSS+'\n</style>\n'+render(slug,record,embed=True)
-        snippet=snippet.encode('ascii','xmlcharrefreplace').decode('ascii')
+        snippet=fragment(slug)
         (OUT/'embeds'/name).write_text(snippet,encoding='utf-8')
         (OUT/'embeds'/name.replace('.html','.txt')).write_text(snippet,encoding='utf-8')
-        (OUT/'pages'/name).write_text(document(render(slug,record),record['av-sub'][0]),encoding='utf-8')
+        (OUT/'pages'/name).write_text(document(common_body(slug),record['av-sub'][0]),encoding='utf-8')
     record=DATA['anivelle-shop.html']
-    (OUT/'index.html').write_text(document(render('shop',record,home=True),'The Celestial Atelier',home=True),encoding='utf-8')
-    snippet=('<style type="text/css">\n'+CSS+'\n</style>\n'+render('shop',record,embed=True,home=True)).encode('ascii','xmlcharrefreplace').decode('ascii')
+    (OUT/'index.html').write_text(document(common_body('home',root_page=True),'The Celestial Atelier',home=True),encoding='utf-8')
+    snippet=fragment('home')
     (OUT/'embeds'/'anivelle-home.html').write_text(snippet,encoding='ascii')
     (OUT/'embeds'/'anivelle-home.txt').write_text(snippet,encoding='ascii')
+    (OUT/'common').mkdir(exist_ok=True)
+    (OUT/'common'/'anivelle-common.html').write_text(snippet,encoding='ascii')
+    (OUT/'common'/'anivelle-common.txt').write_text(snippet,encoding='ascii')
     print('Built ten styled pages and ten matching IMVU HTML + TXT fragments.')
 
 if __name__=='__main__': build()
