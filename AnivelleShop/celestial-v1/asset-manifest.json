@@ -1,0 +1,187 @@
+{
+  "theme": "Celestial Atelier",
+  "brand": "AnivelleShop",
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "name": "accessories-hero",
+      "file": "assets/accessories-hero.webp",
+      "original": "originals/accessories-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/accessories-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 302746,
+      "sha256": "1fe70318ef06ec9437274817b68a83bf1546234b6a732337ba0261e3f86d7d4f"
+    },
+    {
+      "name": "accessories-tile",
+      "file": "assets/accessories-tile.webp",
+      "original": "originals/accessories-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/accessories-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 429150,
+      "sha256": "c54c5aa2460260507f9ca1ac73b8b8d68f4e8b03b9fd1dc16fadaa1f456ac43e"
+    },
+    {
+      "name": "atelier-banner",
+      "file": "assets/atelier-banner.webp",
+      "original": "originals/atelier-banner.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/atelier-banner.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 350164,
+      "sha256": "ca88a02b6c313077e94f449521c3ea1c53388be60e737e13d64f836b6c7ea2fb"
+    },
+    {
+      "name": "body-hero",
+      "file": "assets/body-hero.webp",
+      "original": "originals/body-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/body-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 335162,
+      "sha256": "f2dfb7f6141bc2fded5b3f0ac1d8aaea1b81d5384e4aaf5a5e489c2107af752d"
+    },
+    {
+      "name": "body-tile",
+      "file": "assets/body-tile.webp",
+      "original": "originals/body-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/body-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 445642,
+      "sha256": "8920d4a04e1f7950ad0d62ef8ed3f590d02e069fac6c905078ca9b452db3d020"
+    },
+    {
+      "name": "clothing-hero",
+      "file": "assets/clothing-hero.webp",
+      "original": "originals/clothing-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/clothing-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 334932,
+      "sha256": "d05bb7def808e350b8b0ef11743a1dccc37dcdba75637ccf100e0cd1cfce260a"
+    },
+    {
+      "name": "clothing-tile",
+      "file": "assets/clothing-tile.webp",
+      "original": "originals/clothing-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/clothing-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 376778,
+      "sha256": "c4dfa6fd169546c83bf34e9839222d2cfc247e4d9711e52a02d88eb27b67182f"
+    },
+    {
+      "name": "creator-hero",
+      "file": "assets/creator-hero.webp",
+      "original": "originals/creator-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/creator-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 349844,
+      "sha256": "d58cce2abad35aac10ff2b6016cea46fea2d463952348b4b6d89eaf256389053"
+    },
+    {
+      "name": "cutouts-hero",
+      "file": "assets/cutouts-hero.webp",
+      "original": "originals/cutouts-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/cutouts-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 355106,
+      "sha256": "44398f7ea1823b66650dc7902c52a887f0c8c72ac22468891d21cce58cbbc05f"
+    },
+    {
+      "name": "cutouts-tile",
+      "file": "assets/cutouts-tile.webp",
+      "original": "originals/cutouts-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/cutouts-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 352294,
+      "sha256": "3b060332bdbb47992fa445d10496c2a775b2d6509736573539464627c20eb20b"
+    },
+    {
+      "name": "furniture-tile",
+      "file": "assets/furniture-tile.webp",
+      "original": "originals/furniture-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/furniture-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 489112,
+      "sha256": "8d62de65e2fcbf470ef565bc7dc68b1cb1bdd243626dba8934d955b0e24c380b"
+    },
+    {
+      "name": "home-hero",
+      "file": "assets/home-hero.webp",
+      "original": "originals/home-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/home-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 340804,
+      "sha256": "e06e4753331c322a15360ff63985919fb6783f90e40fe38b2f09a0ad0ffef780"
+    },
+    {
+      "name": "pets-hero",
+      "file": "assets/pets-hero.webp",
+      "original": "originals/pets-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/pets-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 309952,
+      "sha256": "040ec27005beba3a9358c6e0ec6d71cefd3e379c073d1a2673e032df573bd8df"
+    },
+    {
+      "name": "pets-tile",
+      "file": "assets/pets-tile.webp",
+      "original": "originals/pets-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/pets-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 348528,
+      "sha256": "c34f07bddd0354e3c601f8c905754d99c32e668f7b89a71049778d0d08205fa7"
+    },
+    {
+      "name": "poses-hero",
+      "file": "assets/poses-hero.webp",
+      "original": "originals/poses-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/poses-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 292424,
+      "sha256": "21f823d104c443fe2eadba88d4ac28a44d1ec6ff8d99e4b0b854c64d5d8b22cc"
+    },
+    {
+      "name": "poses-tile",
+      "file": "assets/poses-tile.webp",
+      "original": "originals/poses-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/poses-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 455198,
+      "sha256": "56a5a18aacb194354df77b8136e897dc33f0d7356cab87c025f48babadb0d2f3"
+    },
+    {
+      "name": "rooms-hero",
+      "file": "assets/rooms-hero.webp",
+      "original": "originals/rooms-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/rooms-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 376168,
+      "sha256": "d06f580d79531e8335056b07ace21248595c3ab59c509672737c49fa6be729e2"
+    },
+    {
+      "name": "rooms-tile",
+      "file": "assets/rooms-tile.webp",
+      "original": "originals/rooms-tile.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/rooms-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 566520,
+      "sha256": "278dbc3b6f046a7bee93052135327828bc59d2cc3d22a733c3c7602ab6685414"
+    }
+  ]
+}

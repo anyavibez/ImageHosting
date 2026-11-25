@@ -1,0 +1,13 @@
+{
+  "standalone_pages": 10,
+  "shop_pages": 9,
+  "IMVU_HTML_embeds": 9,
+  "IMVU_TXT_embeds": 9,
+  "generated_assets": 18,
+  "all_assets_used": true,
+  "original_catalogue_links_preserved": true,
+  "existing_page_content_preserved": true,
+  "html_nesting": "valid",
+  "local_links": "valid",
+  "reduced_motion": "supported"
+}

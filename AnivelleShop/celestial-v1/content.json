@@ -1,0 +1,1250 @@
+{
+  "anivelle-accessories.html": {
+    "av-sub": [
+      "Accessories Collection"
+    ],
+    "av-sec-title": [
+      "Welcome to the Accessories Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Accessories",
+      "Accessory Styles",
+      "Why Choose These Accessories?"
+    ],
+    "av-sec-text": [
+      "Complete your avatar's look with sharp, detailed accessories — from bold chains and body tattoos to weapons and statement pieces built to add edge and personality to any style."
+    ],
+    "av-show-name": [
+      "Chains",
+      "Tattoos",
+      "Weapons",
+      "Rings & Bracelets",
+      "Glasses & Shades",
+      "Wings & Halos"
+    ],
+    "av-show-desc": [
+      "Bold metal links that catch every single light.",
+      "Sleeve and body art with crisp, clean linework.",
+      "Edgy props built for seriously strong looks.",
+      "Small pieces with a very big shine.",
+      "Sharp frames that finish the face.",
+      "Fantasy finishes for any avatar."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Finishing Touches",
+      "Mix and Match"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Add a statement piece or a subtle detail to finish an avatar look.",
+      "Pair pieces from the collection with everyday outfits, formal looks, and themed fits."
+    ],
+    "av-mini": [
+      "✔ High Detail Textures",
+      "✔ Chains, Tattoos & Weapons",
+      "✔ Bold & Edgy Styles",
+      "✔ Great Layering Pieces",
+      "✔ New Accessories Added Regularly",
+      "✔ Perfect Finishing Touch For Any Look"
+    ],
+    "av-gfoot-sub": [
+      "Finish your look in pure gold."
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Chains",
+        "Necklaces",
+        "Bracelets",
+        "Rings",
+        "Piercings"
+      ],
+      [
+        "Tattoos",
+        "Weapons",
+        "Glasses & Shades",
+        "Belts",
+        "Wings & Halos"
+      ]
+    ],
+    "styles": [
+      "Bold Chain Sets",
+      "Body & Sleeve Tattoos",
+      "Edgy Weapon Props",
+      "Luxury Jewelry Pieces",
+      "Statement Accessories",
+      "Hats, Belts & Extras"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Browse More Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-avatar-poses.html": {
+    "av-sub": [
+      "Avatars & Poses"
+    ],
+    "av-sec-title": [
+      "Welcome to the Avatar Pose Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Avatar Poses",
+      "Pose Styles",
+      "Why Choose These Poses?"
+    ],
+    "av-sec-text": [
+      "A full set of clean, attractive standing poses crafted for both male and female avatars — perfect for profile shots, photoshoots and everyday IMVU style."
+    ],
+    "av-show-name": [
+      "Female Standing",
+      "Female Model",
+      "Female Elegant",
+      "Male Standing",
+      "Male Model",
+      "Male Street"
+    ],
+    "av-show-desc": [
+      "Clean, natural and quietly confident.",
+      "Editorial angles built for profile shots.",
+      "Soft, graceful body language.",
+      "Neutral, perfectly balanced framing.",
+      "Editorial confidence with a sharp silhouette.",
+      "Casual energy and urban attitude."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Solo & Couple Poses",
+      "Photo-Ready Moments"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Frame an avatar on their own or bring two avatars together for a shared scene.",
+      "Use poses to set up portraits, outfit shots, and scenes with friends."
+    ],
+    "av-mini": [
+      "✔ Clean, Smooth Pose Quality",
+      "✔ Male & Female Options",
+      "✔ Attractive Standing Poses",
+      "✔ Great For Profile Pictures",
+      "✔ New Poses Added Regularly",
+      "✔ Easy To Use In Any Room"
+    ],
+    "av-gfoot-sub": [
+      "Strike the perfect pose!"
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Female Standing Pose",
+        "Female Model Pose",
+        "Female Elegant Pose",
+        "Female Confident Pose",
+        "Female Casual Pose"
+      ],
+      [
+        "Male Standing Pose",
+        "Male Model Pose",
+        "Male Confident Pose",
+        "Male Casual Pose",
+        "Male Street Pose"
+      ]
+    ],
+    "styles": [
+      "Attractive Standing Poses",
+      "Profile Picture Poses",
+      "Photoshoot Poses",
+      "Model Style Poses",
+      "Everyday Default Poses",
+      "Couple & Duo Poses"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Browse More Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-body.html": {
+    "av-sub": [
+      "Body Collection"
+    ],
+    "av-sec-title": [
+      "Welcome to the Body Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Body Parts",
+      "Detail Options",
+      "Why Choose This Collection?"
+    ],
+    "av-sec-text": [
+      "Build the perfect avatar from the ground up — realistic eyes, detailed hair, smooth body skins and sharp head shapes, all crafted for a clean, natural finish."
+    ],
+    "av-show-name": [
+      "Eyes",
+      "Hair",
+      "Body",
+      "Head",
+      "Male Set",
+      "Female Set"
+    ],
+    "av-show-desc": [
+      "Realistic irises with genuine natural depth.",
+      "Styled textures with soft, believable volume.",
+      "Smooth skins with a perfectly natural finish.",
+      "Sculpted head shapes for a sharper profile.",
+      "Masculine proportions and clean finishes.",
+      "Feminine proportions and soft finishes."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Avatar Details",
+      "Style Your Way"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Explore body parts and details to shape your avatar’s look.",
+      "Combine details from the collection to make your avatar feel more personal."
+    ],
+    "av-mini": [
+      "✔ High Quality Textures",
+      "✔ Realistic Eyes & Hair",
+      "✔ Smooth Body & Head Shapes",
+      "✔ Male & Female Compatible",
+      "✔ New Parts Added Regularly",
+      "✔ Mix & Match Avatar Details"
+    ],
+    "av-gfoot-sub": [
+      "Craft the avatar you always wanted."
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Eyes",
+        "Hair"
+      ],
+      [
+        "Body",
+        "Head"
+      ]
+    ],
+    "styles": [
+      "Realistic Eye Colors",
+      "Styled Hair Textures",
+      "Smooth Body Skins",
+      "Sculpted Head Shapes",
+      "Male & Female Options",
+      "Natural Skin Tones"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Browse More Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-clothing.html": {
+    "av-sub": [
+      "Clothing Collection"
+    ],
+    "av-sec-title": [
+      "Welcome to the Clothing Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Clothing",
+      "Outfit Styles",
+      "Why Choose This Clothing?"
+    ],
+    "av-sec-text": [
+      "Fresh outfits for every style and every avatar — from soft girly fits to sharp streetwear for the boys, everything is made to fit your vibe and elevate your look."
+    ],
+    "av-show-name": [
+      "Girl Dresses",
+      "Girl Crop Tops",
+      "Girl Streetwear",
+      "Boy Hoodies",
+      "Boy Suits",
+      "Matching Couple Outfits"
+    ],
+    "av-show-desc": [
+      "Flowing formal fits with layered, weighty fabric.",
+      "Clean, sharp everyday styling for any look.",
+      "Street-ready fits with real attitude.",
+      "Heavy, textured and built for layering.",
+      "Tailored formal fits for every occasion.",
+      "Sets that look made for two."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Made To Fit",
+      "100% Original"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Girl and boy avatars both get outfits shaped to sit properly, from casual everyday looks to full formal sets.",
+      "Every design is made from scratch by Anivelle Studio. No copies and no recycled assets, so you own something unique."
+    ],
+    "av-mini": [
+      "✔ High Quality Fabrics & Textures",
+      "✔ Girl & Boy Fits Available",
+      "✔ Casual To Formal Styles",
+      "✔ Trendy & Aesthetic Designs",
+      "✔ New Outfits Added Regularly",
+      "✔ Mix & Match Wardrobe Pieces"
+    ],
+    "av-gfoot-sub": [
+      "Dress to impress!"
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Girl Dresses",
+        "Girl Crop Tops",
+        "Girl Skirts",
+        "Girl Streetwear",
+        "Girl Formal Outfits"
+      ],
+      [
+        "Boy Hoodies",
+        "Boy Jackets",
+        "Boy Streetwear",
+        "Boy Suits",
+        "Boy Casual Fits"
+      ]
+    ],
+    "styles": [
+      "Casual Everyday Fits",
+      "Streetwear & Urban Looks",
+      "Formal & Party Outfits",
+      "Cute & Soft Aesthetic Fits",
+      "Matching Couple Outfits",
+      "Luxury & Designer Looks"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Browse More Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-creator-only.html": {
+    "av-sub": [
+      "Anivelle Signature Ribbon"
+    ],
+    "av-sec-title": [
+      "Anivelle Signature Ribbon",
+      "Three Simple Rules"
+    ],
+    "av-sec-text": [
+      "Everything else in the ANIVELLE Shop catalogue is a normal, safe purchase. Only this single ribbon stays with the creator."
+    ],
+    "av-show-name": [],
+    "av-show-desc": [],
+    "av-card-title": [],
+    "av-card-text": [],
+    "av-mini": [
+      "✔ Do not buy the creator only item",
+      "✔ It is a personal piece, not a product",
+      "✔ Everything else in the shop is safe to buy"
+    ],
+    "av-gfoot-sub": [
+      "Shop freely, but leave this one ribbon to the creator."
+    ],
+    "av-warn-title": [
+      "DO NOT BUY"
+    ],
+    "av-warn-sub": [
+      "Anivelle Signature Ribbon — CREATOR ONLY"
+    ],
+    "av-warn-note": [
+      "This ribbon is a personal piece of the creator, not a product. Do not buy it, do not ask for it and do not treat it like a normal item. It is listed here only so that everyone knows it is off limits."
+    ],
+    "av-co-item-name": [
+      "Anivelle Signature Ribbon"
+    ],
+    "av-co-item-desc": [
+      "The ribbon that signed the very first atelier piece. The creator keeps it, it was never meant to leave the studio and it is not part of the catalogue."
+    ],
+    "av-co-item-tag": [
+      "Creator Only — Do Not Purchase"
+    ],
+    "lists": [],
+    "styles": [],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🔒 View The Item",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=Anivelle%20Signature%20Ribbon&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Back To Shop",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🔒 Open The Item In IMVU",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=Anivelle%20Signature%20Ribbon&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Back To ANIVELLE Shop",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-cutouts.html": {
+    "av-sub": [
+      "Custom Cutouts"
+    ],
+    "av-sec-title": [
+      "Welcome, cutie!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Available Cutouts",
+      "Cutout Styles",
+      "Need A Custom Cutout?",
+      "Why Choose ANIVELLE?"
+    ],
+    "av-sec-text": [
+      "Thank you for stopping by my little catalog corner 💜 I hand-craft adorable custom cutouts with love and care in every single detail — perfect for your IMVU avatar, couples, family, kids, pets, anime characters, and so much more!",
+      "I can create custom cutouts from:",
+      "Simply send me a message with your idea — I’d love to bring it to life! ✨"
+    ],
+    "av-show-name": [
+      "Couple Cutouts",
+      "Family Cutouts",
+      "Pet Cutouts",
+      "Anime Cutouts",
+      "Gaming Characters",
+      "IMVU Avatar Cutouts"
+    ],
+    "av-show-desc": [
+      "Two figures, one perfectly clean composition.",
+      "Warm group scenes with flawless spacing.",
+      "Your favourite animal, cut perfectly clean.",
+      "Characters with bold, crisp outlines.",
+      "Heroes and villains from your favourite games.",
+      "Your own avatar, background removed."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Clean Edges",
+      "Custom Styling"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Give avatar portraits a clean outline that reads clearly against a new background.",
+      "Choose a cutout style that fits your avatar, pose, and intended layout."
+    ],
+    "av-mini": [
+      "✔ High Quality Designs",
+      "✔ Clean Background Removal",
+      "✔ Cute & Detailed Artwork",
+      "✔ Personalized Requests",
+      "✔ Fast Friendly Service",
+      "✔ New Designs Added Regularly"
+    ],
+    "av-gfoot-sub": [
+      "Have a wonderful day and enjoy shopping, cutie!"
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Couple Cutouts",
+        "Family Cutouts",
+        "Friends Cutouts",
+        "Kids Cutouts"
+      ],
+      [
+        "Pet Cutouts",
+        "IMVU Avatar Cutouts",
+        "Anime Cutouts",
+        "Gaming Characters"
+      ]
+    ],
+    "styles": [
+      "Couple Cutouts",
+      "Family Cutouts",
+      "Pet Cutouts",
+      "Anime Cutouts",
+      "Gaming Characters",
+      "IMVU Avatar Cutouts"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Visit ANIVELLE Shop",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-pets.html": {
+    "av-sub": [
+      "Pets Collection"
+    ],
+    "av-sec-title": [
+      "Welcome to the Pet Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Pets",
+      "Pet Styles",
+      "Why Choose These Pets?"
+    ],
+    "av-sec-text": [
+      "Give your avatar the perfect companion — from cuddly dogs and cats to birds, exotic creatures and fantasy pets, every friend here is crafted with detail and charm."
+    ],
+    "av-show-name": [
+      "Dogs",
+      "Cats",
+      "Bunnies",
+      "Birds",
+      "Dragons",
+      "Fantasy Creatures"
+    ],
+    "av-show-desc": [
+      "Loyal companions with expressive, beautifully textured coats.",
+      "Independent, elegant and always ready for a photo.",
+      "Soft, cuddly and adorably small.",
+      "Feathered detail and animated perching poses.",
+      "Mythical companions built for legends.",
+      "Original creatures built from your imagination."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Room Companions",
+      "Pets With Personality"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Add a pet to make a quiet corner, living room, or themed space feel lived in.",
+      "Pick a companion that fits the mood of your room or avatar."
+    ],
+    "av-mini": [
+      "✔ High Quality Pet Designs",
+      "✔ Realistic & Fantasy Options",
+      "✔ Cute & Detailed Textures",
+      "✔ Great For Any Avatar Style",
+      "✔ New Pets Added Regularly",
+      "✔ Great For Photos & Room Setups"
+    ],
+    "av-gfoot-sub": [
+      "Meet your new best friend!"
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Dogs",
+        "Cats",
+        "Bunnies",
+        "Birds",
+        "Fish & Aquatic Pets"
+      ],
+      [
+        "Exotic Pets",
+        "Fantasy Creatures",
+        "Dragons",
+        "Wolves & Foxes",
+        "Mini Farm Animals"
+      ]
+    ],
+    "styles": [
+      "Cute & Cuddly Pets",
+      "Realistic Animal Pets",
+      "Mythical & Fantasy Pets",
+      "Interactive Pet Poses",
+      "Matching Owner & Pet Sets",
+      "Exotic & Rare Animals"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Browse More Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-rooms.html": {
+    "av-sub": [
+      "Rooms & Furniture"
+    ],
+    "av-sec-title": [
+      "Welcome to the Room Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Themed Rooms",
+      "Room Moods & Themes",
+      "Why Choose These Rooms?"
+    ],
+    "av-sec-text": [
+      "Step into fully themed IMVU rooms built to match every mood and story — from dreamy romance to soft heartbreak, from elegant weddings to Tokyo nights. Each room is crafted with detail, atmosphere and aesthetic in mind, ready for you to move in and make it yours."
+    ],
+    "av-show-name": [
+      "Rose Petal Romance",
+      "Bridal Bliss Suite",
+      "Midnight Heartbreak Loft",
+      "Sakura Zen Garden",
+      "Tokyo Neon Nights",
+      "Luxury Aesthetic Loft"
+    ],
+    "av-show-desc": [
+      "Petals, soft light and a perfectly staged two-person scene.",
+      "Ivory palette with elegant ceremony staging and detail.",
+      "Moody low lighting made for the dramatic storyline.",
+      "Stone, blossom and stillness inside one calm build.",
+      "Full cyberpunk glow with city-facing glass walls.",
+      "Clean lines, warm light and expensive calm."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Complete Room Themes",
+      "Set the Scene"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Explore coordinated spaces, from romantic settings to luxury interiors.",
+      "Choose a room mood for portraits, hangouts, or a special occasion."
+    ],
+    "av-mini": [
+      "✔ Fully Themed Atmospheres",
+      "✔ Mood-Based Room Designs",
+      "✔ Romantic & Wedding Ready Setups",
+      "✔ Japan & Aesthetic Inspired Rooms",
+      "✔ Personalized Room Requests",
+      "✔ New Rooms Added Regularly"
+    ],
+    "av-gfoot-sub": [
+      "Find the room that matches your mood!"
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Rose Petal Romance Room",
+        "Bridal Bliss Wedding Suite",
+        "Midnight Heartbreak Loft",
+        "Sakura Zen Garden Room",
+        "Candlelight Love Nest"
+      ],
+      [
+        "Tokyo Neon Nights Room",
+        "Rainy Day Melancholy Room",
+        "Dreamy Date Night Studio",
+        "Cherry Blossom Honeymoon Room",
+        "Luxury Aesthetic Loft"
+      ]
+    ],
+    "styles": [
+      "Romantic & Couple Rooms",
+      "Wedding & Bridal Rooms",
+      "Sad & Emotional Aesthetic Rooms",
+      "Japan & Sakura Themed Rooms",
+      "Luxury & Date Night Rooms",
+      "Dreamcore & Soft Aesthetic Rooms"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Browse More Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  },
+  "anivelle-shop.html": {
+    "av-sub": [
+      "Furniture Collection"
+    ],
+    "av-sec-title": [
+      "Welcome to the Furniture Collection!",
+      "Signature Pieces",
+      "Crafted For Collectors",
+      "Premium Furniture",
+      "Romantic & Interactive Collection",
+      "What's Inside?"
+    ],
+    "av-sec-text": [
+      "Discover stylish and high-quality furniture made for beautiful IMVU rooms, romantic spaces, luxury setups and unforgettable moments. From elegant sofas and beds to cars, helicopters and interactive couple furniture — everything is designed to make your room stand out."
+    ],
+    "av-show-name": [
+      "Luxury Sofas",
+      "Premium Beds",
+      "Romantic Furniture",
+      "Private Helicopters",
+      "Interactive Furniture",
+      "Premium Room Props"
+    ],
+    "av-show-desc": [
+      "Deep-seated velvet and leather builds with hand-stitched piping.",
+      "King and queen frames dressed in beautifully layered bedding.",
+      "Candlelit two-seaters made for slow, cozy nights.",
+      "Detailed airframes that anchor a luxury penthouse.",
+      "Beds, sofas and tubs that actually move with your avatar.",
+      "Statement lighting and accents that finish the whole scene."
+    ],
+    "av-card-title": [
+      "Handcrafted Detail",
+      "Instant Delivery",
+      "Custom Requests",
+      "Fresh Drops",
+      "Statement Pieces",
+      "Interactive Details"
+    ],
+    "av-card-text": [
+      "Every piece is built with obsessive attention to texture, shading and fit, so it looks completely native inside IMVU.",
+      "Buy it and it lands straight in your inventory. No waiting, no bundles, no hidden extra steps.",
+      "Send a message with your idea and the collection gets tailored to your exact vision, down to the last detail.",
+      "New designs arrive every week, so your room never looks the same as everybody else in IMVU.",
+      "Build your room around a standout sofa, a premium bed, or a luxury vehicle.",
+      "Bring a scene to life with couple seating, animated furniture, and room props."
+    ],
+    "av-mini": [
+      "✔ High Quality Furniture",
+      "✔ Luxury Cars & Helicopters",
+      "✔ Romantic Couple Furniture",
+      "✔ Kiss, Hug & Couple Poses",
+      "✔ Interactive Room Items",
+      "✔ Premium Room Decorations"
+    ],
+    "av-gfoot-sub": [
+      "Enjoy the collection and make your IMVU room unforgettable!"
+    ],
+    "av-warn-title": [],
+    "av-warn-sub": [],
+    "av-warn-note": [],
+    "av-co-item-name": [],
+    "av-co-item-desc": [],
+    "av-co-item-tag": [],
+    "lists": [
+      [
+        "Luxury Sofas",
+        "Premium Beds",
+        "Romantic Furniture",
+        "Couple Furniture",
+        "Living Room Sets"
+      ],
+      [
+        "Luxury Cars",
+        "Private Helicopters",
+        "Couple Seating",
+        "Interactive Furniture",
+        "Premium Room Props"
+      ]
+    ],
+    "styles": [
+      "Romantic Couple Furniture",
+      "Kiss & Romantic Poses",
+      "Couple Sitting Furniture",
+      "Couple Bed Poses",
+      "Hug & Cuddle Poses",
+      "Intense Romantic Poses",
+      "Luxury Date Setups",
+      "Interactive Couple Furniture"
+    ],
+    "rights": [
+      "Do not copy or reupload",
+      "Do not copy, rip, extract, resell, redistribute or reupload Anivelle Studio textures, meshes, designs or product assets without permission. Derive or edit only where the product listing permits it.",
+      "Unauthorized use may be reported to IMVU through its copyright reporting process."
+    ],
+    "original_links": [
+      {
+        "text": "🛍 Enter The Atelier",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "📦All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🏠Rooms & Furniture",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=107&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "👗Clothing",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=106&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💎Accessories",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3117&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "💃Avatars",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=108&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🎈Miscellaneous",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3110&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🜧Body",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=3114&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🐾Pets",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=425&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      },
+      {
+        "text": "🛍 Visit ANIVELLE Shop",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=&narrow=&manufacturers_id=&derived_from=&derivable=0&sort=conversion_score_b"
+      },
+      {
+        "text": "🎀 Browse All Products",
+        "href": "https://www.imvu.com/shop/web_search.php?keywords=anivellestudio&within=creator_name&page=1&cat=&bucket=&tag=&sortorder=desc&quickfind=new&product_rating=0&offset=27&narrow=&manufacturers_id=&derived_from=0&derivable=1&c_derivable=1&sort=id"
+      }
+    ]
+  }
+}
