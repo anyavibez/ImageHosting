@@ -34,7 +34,7 @@ class Page(HTMLParser):
 def validate():
     data=json.loads((OUT/'content.json').read_text(encoding='utf-8'))
     manifest=json.loads((OUT/'asset-manifest.json').read_text(encoding='utf-8'))
-    assert len(manifest['assets'])==18
+    assert len(manifest['assets'])==28
     used=set(); pages=list((OUT/'pages').glob('*.html'))+[OUT/'index.html']
     assert len(pages)==10
     for file in pages:
@@ -42,14 +42,18 @@ def validate():
         assert p.headings==1, f'{file.name}: expected one h1'
         assert len(p.ids)==len(set(p.ids)), f'{file.name}: duplicate IDs'
         assert '<script' not in text, 'Shop must work without scripts'
+        assert 'anv-arrival-grid' in text and 'anv-card-flourish' in text
+        assert 'anv-arrivals' in p.ids
         assert not re.search(r'devil|pentagram|Pirata One|dlx-cursor|av-fire|2b\.png',text,re.I)
         for ref in p.images+p.links:
             if ref.startswith('#'): assert ref[1:] in p.ids, f'Invalid anchor {ref}'
             elif not urlparse(ref).scheme: assert (file.parent/ref).resolve().is_file(), f'Missing local file {ref} from {file}'
-        for src in p.images: used.add(Path(src).name)
+        for src in p.images+re.findall(r"url\('([^']+)'\)",text): used.add(Path(src).name)
     for name,record in data.items():
         html=(OUT/'embeds'/name).read_text(encoding='utf-8'); p=Page(html)
         assert p.headings==1
+        assert html.isascii(), 'IMVU snippet must use ASCII with numeric HTML entities'
+        assert not re.search(r'<(?:svg|script|iframe|form|input|button|header|footer|nav|section|article|details|summary)\b',html,re.I)
         assert (OUT/'embeds'/name.replace('.html','.txt')).read_text(encoding='utf-8')==html
         for original in record['original_links']:
             assert original['href'] in p.links, f'Lost original catalogue URL: {original["text"]}'
@@ -64,8 +68,13 @@ def validate():
         assert hashlib.sha256(file.read_bytes()).hexdigest()==asset['sha256']
         assert file.name in used, f'Unused generated asset {file.name}'
     css=(OUT/'celestial.css').read_text(encoding='utf-8')
-    assert 'prefers-reduced-motion' in css and '@container(max-width:600px)' in css
-    summary={'standalone_pages':10,'shop_pages':9,'IMVU_HTML_embeds':9,'IMVU_TXT_embeds':9,'generated_assets':18,'all_assets_used':True,'original_catalogue_links_preserved':True,'existing_page_content_preserved':True,'html_nesting':'valid','local_links':'valid','reduced_motion':'supported'}
+    assert 'prefers-reduced-motion' in css and '@media(max-width:600px)' in css
+    assert '@container' not in css and 'cqw' not in css and '@import' not in css
+    home=(OUT/'embeds'/'anivelle-home.html').read_text(encoding='ascii')
+    hp=Page(home)
+    assert hp.headings==1 and 'anv-arrivals' in hp.ids and '<svg' not in home
+    assert len(list((OUT/'embeds').glob('*.html')))==10
+    summary={'standalone_pages':10,'shop_pages':9,'IMVU_HTML_embeds':10,'IMVU_TXT_embeds':10,'generated_assets':28,'all_assets_used':True,'original_catalogue_links_preserved':True,'existing_page_content_preserved':True,'html_nesting':'valid','local_links':'valid','symbols':'ASCII HTML entities','scripts_svg_forms':'none','reduced_motion':'supported'}
     (OUT/'validation.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print(json.dumps(summary,indent=2))
 

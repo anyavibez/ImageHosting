@@ -24,6 +24,56 @@
       "sha256": "c54c5aa2460260507f9ca1ac73b8b8d68f4e8b03b9fd1dc16fadaa1f456ac43e"
     },
     {
+      "name": "arrival-cape-set",
+      "file": "assets/arrival-cape-set.webp",
+      "original": "originals/arrival-cape-set.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/arrival-cape-set.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 277870,
+      "sha256": "ac170210f9a693a8b050a02869ab2b433ef6302c26b88b13feb592fe0496bd82"
+    },
+    {
+      "name": "arrival-frill-dress",
+      "file": "assets/arrival-frill-dress.webp",
+      "original": "originals/arrival-frill-dress.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/arrival-frill-dress.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 298150,
+      "sha256": "ca7a2ea236987c5c4a580746c9ea159425c0204a986625718758651c479a6e20"
+    },
+    {
+      "name": "arrival-lunar-dress",
+      "file": "assets/arrival-lunar-dress.webp",
+      "original": "originals/arrival-lunar-dress.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/arrival-lunar-dress.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 285378,
+      "sha256": "5a31428dcc959eb5dbd59a53753fb75cf5c595d88f6122cca178ad853baf7166"
+    },
+    {
+      "name": "arrival-orbit-bow",
+      "file": "assets/arrival-orbit-bow.webp",
+      "original": "originals/arrival-orbit-bow.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/arrival-orbit-bow.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 337426,
+      "sha256": "9421f4161039130a812b197e62e7acd853e29f22725afca423de80177cc987b0"
+    },
+    {
+      "name": "arrival-rose-braids",
+      "file": "assets/arrival-rose-braids.webp",
+      "original": "originals/arrival-rose-braids.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/arrival-rose-braids.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 319240,
+      "sha256": "8209d9d4d0107619059114e81fcbe3ef793878e5c184d534d7cbad35530d9cb7"
+    },
+    {
       "name": "atelier-banner",
       "file": "assets/atelier-banner.webp",
       "original": "originals/atelier-banner.png",
@@ -54,6 +104,26 @@
       "sha256": "8920d4a04e1f7950ad0d62ef8ed3f590d02e069fac6c905078ca9b452db3d020"
     },
     {
+      "name": "boutique-hero",
+      "file": "assets/boutique-hero.webp",
+      "original": "originals/boutique-hero.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/boutique-hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 346554,
+      "sha256": "2ddcff2c30f294953103750865e1d05f477a05fde894b1422c15d19762ce481a"
+    },
+    {
+      "name": "celestial-silk",
+      "file": "assets/celestial-silk.webp",
+      "original": "originals/celestial-silk.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/celestial-silk.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 103592,
+      "sha256": "cf5f898ab293d6aaa4274a53d0335cdaad30a881441478d8d04fff03d9e3baf2"
+    },
+    {
       "name": "clothing-hero",
       "file": "assets/clothing-hero.webp",
       "original": "originals/clothing-hero.png",
@@ -72,6 +142,36 @@
       "height": 1254,
       "bytes": 376778,
       "sha256": "c4dfa6fd169546c83bf34e9839222d2cfc247e4d9711e52a02d88eb27b67182f"
+    },
+    {
+      "name": "collection-gala",
+      "file": "assets/collection-gala.webp",
+      "original": "originals/collection-gala.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/collection-gala.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 280638,
+      "sha256": "181bc3601a0000064cdc13968fed59e83eb73021aaef0a4e25a42f10e08f2d9e"
+    },
+    {
+      "name": "collection-starlit",
+      "file": "assets/collection-starlit.webp",
+      "original": "originals/collection-starlit.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/collection-starlit.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 303138,
+      "sha256": "ecd592b88392830f889e3dff5d7cb416027584e062542eac38878ad86a9d7f45"
+    },
+    {
+      "name": "collection-twintails",
+      "file": "assets/collection-twintails.webp",
+      "original": "originals/collection-twintails.png",
+      "url": "https://raw.githubusercontent.com/anyavibez/ImageHosting/main/AnivelleShop/celestial-v1/assets/collection-twintails.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 308252,
+      "sha256": "492e370cb15d8a74746dcb4e28ff38bd8270b62368db50c2ae65c733c5bf5f86"
     },
     {
       "name": "creator-hero",

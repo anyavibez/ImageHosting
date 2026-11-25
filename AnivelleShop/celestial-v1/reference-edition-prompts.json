@@ -1,0 +1,62 @@
+[
+  {
+    "name": "boutique-hero",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Landscape 3:2 hero artwork. Closely match the reference's hero illustration: original adult blonde green-eyed woman with long wavy twin ponytails tied in black ribbons, chic opaque black-and-lavender off-shoulder lace dress, delicate golden star jewelry. Three-quarter view upper head to mid-thigh, heroine occupies RIGHT 60%, smiling with one hand resting on a pearl boutique counter, other hand playfully touching a hair ribbon. LEFT 40% of image is dark plum low-detail arched window boutique backdrop for HTML title. Heroine's face not at upper edge, generous headroom. Bright luminous blonde hair and lovely soft face, cinematic rose-lavender lighting. Elegant fully clothed, no erotic focus. Flowing blush ribbon crosses background, expensive moonlit boutique salon.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "collection-gala",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Landscape 3:2 collection artwork. RIGHT two-thirds: original exquisite lavender and pearl-white layered couture ballgown on faceless mannequin, gold star embroidery, pearl chains, lilac ribbons, crystal ornament. LEFT third: dark plum elegantly softly sparkling background without objects, empty for live HTML title. Same luxurious anime illustration style as reference featured collection cards.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "collection-twintails",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Landscape 3:2 collection artwork. RIGHT two-thirds: ornate blonde-pink pastel twin ponytail wig, flowing ringlets, pearl roses and lavender bow hair ornaments, displayed on faceless cream mannequin bust. LEFT third: low detail dark plum, empty for live HTML title. Same luxurious celestial anime illustration style as reference featured cards.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "collection-starlit",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Landscape 3:2 collection artwork. RIGHT two-thirds: large lilac silk bow with golden celestial star brooch, elegant crescent necklace, little jewelry display with pearl rose accents on a blush counter. LEFT third: dark plum subtle sparkling atmosphere empty for live HTML title. Same original jewelry aesthetics as reference featured cards.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "arrival-lunar-dress",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Square original product illustration: entire elegant dark plum and lavender celestial short couture dress on faceless mannequin, golden star brooch at waist, cascading ruffles, asymmetrical silk overlay, cute ribbons. Centered product fills 85% frame, softly luminous pearl-pink studio background. No person, no text. Same design language as reference Lunar dress card.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "arrival-frill-dress",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Square original product illustration: entire pearl white and lavender frilled short couture dress on faceless mannequin, delicate golden piping and lilac ribbon at waist, puff sleeves, tiered skirt, star charms. Centered product fills 85% frame, luminous pearl-pink studio backdrop. No person, no text.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "arrival-cape-set",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Square original product illustration: elegant ivory and lavender celestial fashion cape with star embroidery and lilac bow, coordinated outfit on faceless mannequin, full garment visible, gold trim and hanging crescent detail, soft violet lining. Centered product fills 85% frame against pale pearl-pink studio background. No person, no text.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "arrival-rose-braids",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Square original product illustration: beautiful long pastel rose-blonde twin braided hairstyle wig with curled ends and little pearl rose ribbon clips displayed on a faceless mannequin bust. Entire hairstyle fully within frame, polished strands and cute bow details, pale luminous pearl-pink studio background. No person, no text.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "arrival-orbit-bow",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Square original product illustration: delicate lilac silk ribbon hair clip with large original golden orbital crescent-and-star ornament and hanging tiny pearls, displayed on a small pearl velvet pedestal. Product fills 85% of composition, soft luminous pearl-pink studio backdrop. No person, no text.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  },
+  {
+    "name": "celestial-silk",
+    "prompt": "Use case: stylized-concept. Create an original raster illustration asset for AnivelleShop. The reference is the user's chosen original celestial boutique concept, for style, palette and original character consistency. Match luminous premium anime rendering, pearlescent blush, soft lavender, muted rose gold, dark plum, glittering tiny stars, silk ribbons, pearl roses and luxury celestial boutique. No webpage layout, NO TEXT, no typography, no logos, no borders or UI, no watermark. Original designs only. Any person is a clearly adult woman aged 25 with mature facial proportions, tasteful opaque clothing and elegant confident fashion pose. Landscape 3:2 decorative WEBSITE BACKGROUND TEXTURE. Very pale pearlescent blush and lavender silk folds sweeping softly along lower and outer edges, scattered tiny golden star dust and translucent pink ribbon curves around corners, mostly almost-white soft empty center. No figures, no products, no letters, no frames. Extremely subtle and airy so dark HTML text can overlay. Premium illustration same reference mood.",
+    "mode": "built-in image_gen",
+    "reference": "Selected celestial boutique concept"
+  }
+]
